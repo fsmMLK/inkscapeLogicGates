@@ -12,8 +12,6 @@ The main features are
  - signal labeling generator with a few commonly used signals pre defined
  - boolean expression editor, with optional LaTeX support and pre defined logic operator functions.
 
-.. _latexSupport:
-
 # Installation and requirements
 
 This extension was partially developed in Inkscape 0.48 and partially in 0.91 in Linux (Kubuntu 12.04 and 14.04). It should work on both versions of Inkscape. Also, they should work in different OSs too as long as all requirements are installed.
@@ -55,18 +53,15 @@ Please refer to <https://fsmmlk.github.io/inkscapeMadeEasy/#installation-and-req
 This extension is presented in two tabs, **Logic gates** and  **Signals and Expressions**. The extension has two modes of operation. Depending on which tab is on top, the extension will create different elements in your document as soon as you click on `Apply` button (or check `live preview`). The modes are
 
   1- If `Logic gates` tab is on top, then the extension is set to draw logic gates
-
-<img src="docs/images/Gates_Tab.png" width="600px"/>
-
   2- If `Signals and Expressions` tab is on top, then the extension is ready to create signals and/or boolean expressions.
-
-<img src="docs/images/Signals_and_expressions_Tab.png" width="600px"/>
 
 ### Logic Gates tab
 
+<img src="docs/images/Gates_Tab.png" width="400px"/>
+
 **Gate checkboxes:** You can select the ports to be drawn. More than one gate can be created at once, however they will share the same input configuration (see below)
 
-<img src="docs/images/Gates.png" width="600px"/>
+<img src="docs/images/Gates.png" width="800px"/>
 
 **Number of inputs:** Number of inputs of the gate. This parameter does not affect the NOT gate. You can choose any number between 2 and 6
 
@@ -74,15 +69,17 @@ This extension is presented in two tabs, **Logic gates** and  **Signals and Expr
   - 1 stands for regular input
   - 0 stands for inverted input
 
-<img src="docs/images/InputConfig_01.png" width="400px"/>
+<img src="docs/images/InputConfig_01.png" width="300px"/>
 
 The first element of this list is associated to the input at the top. If this string has less elements than the number of inputs, the remaining inputs will be set to regular inputs.
 
 Examples:
 
-<img src="docs/images/InputConfig.png" width="600px"/>
+<img src="docs/images/InputConfig.png" width="700px"/>
 
 ### Signals and Expressions tab
+
+<img src="docs/images/Signals_and_expressions_Tab.png" width="400px"/>
 
 This tab is presented in two sections, *Signals* and *Boolean Expressions*. The first create signal nodes to add to your logic circuit. The second creates a text element with a boolean expression.
 
@@ -95,15 +92,15 @@ This tab is presented in two sections, *Signals* and *Boolean Expressions*. The 
 
 **Signal type:** Allows the selection of one type of signal. You can select a few commonly used signal or select ``Custom`` to customize its label. (see below)
 
-<img src="docs/images/SignalTypes.png" width="600px"/>
+<img src="docs/images/SignalTypes.png" width="800px"/>
 
-**Custom signal label:** Label of the signal. Used only if ``Custom`` is selected in `Signal type`. If LaTeX support is enabled (see :ref:`latexSupport`) the text will be inserted in a mathematical environment $...$
+**Custom signal label:** Label of the signal. Used only if ``Custom`` is selected in `Signal type`. If LaTeX support is enabled (see `Installation and requirements` section) the text will be inserted in a mathematical environment $...$
 
 **Direction:** Direction of the line segment.
 
 **Draw line:** signal line toggle.
 
-<img src="docs/images/SignalLines.png" width="600px"/>
+<img src="docs/images/SignalLines.png" width="200px"/>
 
 #### Boolean Expressions section
 
@@ -111,13 +108,13 @@ This tab is presented in two sections, *Signals* and *Boolean Expressions*. The 
 
 **Boolean expression:** Boolean expression definition. Commands were created for the basic boolean operators:
 
-<img src="docs/images/BooleanCommands.png" width="600px"/>
+<img src="docs/images/BooleanCommands.png" width="500px"/>
 
 > Note: The command ``\NOT`` has one argument and **MUST** be enclosed between ``{ }``
 
 Examples:
 
-<img src="docs/images/BooleanCommands_examples.png" width="600px"/>
+<img src="docs/images/BooleanCommands_examples.png" width="800px"/>
 
 
 # Observations
@@ -126,8 +123,8 @@ Examples:
 
 # Examples
 
-<img src="docs/images/Example_minterms.png" width="900px"/>
+<img src="docs/images/Example_minterms.png" width="700px"/>
 
-<img src="docs/images/Example_circuit.png" width="900px"/>
+<img src="docs/images/Example_circuit.png" width="800px"/>
 
 
