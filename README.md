@@ -53,6 +53,7 @@ Please refer to <https://fsmmlk.github.io/inkscapeMadeEasy/#installation-and-req
 This extension is presented in two tabs, **Logic gates** and  **Signals and Expressions**. The extension has two modes of operation. Depending on which tab is on top, the extension will create different elements in your document as soon as you click on `Apply` button (or check `live preview`). The modes are
 
   1- If `Logic gates` tab is on top, then the extension is set to draw logic gates
+
   2- If `Signals and Expressions` tab is on top, then the extension is ready to create signals and/or boolean expressions.
 
 ### Logic Gates tab
