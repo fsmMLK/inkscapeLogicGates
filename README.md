@@ -62,7 +62,7 @@ This extension is presented in two tabs, **Logic gates** and  **Signals and Expr
 
 **Gate checkboxes:** You can select the ports to be drawn. More than one gate can be created at once, however they will share the same input configuration (see below)
 
-<img src="docs/images/Gates.png" width="800px"/>
+<img src="docs/images/Gates.png" width="700px"/>
 
 **Number of inputs:** Number of inputs of the gate. This parameter does not affect the NOT gate. You can choose any number between 2 and 6
 
@@ -70,7 +70,7 @@ This extension is presented in two tabs, **Logic gates** and  **Signals and Expr
   - 1 stands for regular input
   - 0 stands for inverted input
 
-<img src="docs/images/InputConfig_01.png" width="300px"/>
+<img src="docs/images/InputConfig_01.png" width="250px"/>
 
 The first element of this list is associated to the input at the top. If this string has less elements than the number of inputs, the remaining inputs will be set to regular inputs.
 
@@ -109,7 +109,7 @@ This tab is presented in two sections, *Signals* and *Boolean Expressions*. The 
 
 **Boolean expression:** Boolean expression definition. Commands were created for the basic boolean operators:
 
-<img src="docs/images/BooleanCommands.png" width="500px"/>
+<img src="docs/images/BooleanCommands.png" width="450px"/>
 
 > Note: The command ``\NOT`` has one argument and **MUST** be enclosed between ``{ }``
 
