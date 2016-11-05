@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Logic Gates</_name>
+  <id>fsmMLK.logicGates</id>
+  <dependency type="executable" location="extensions">logicGates.py</dependency>
+  <dependency type="executable" location="extensions">inkscapeMadeEasy_Base.py</dependency>
+  <dependency type="executable" location="extensions">inkscapeMadeEasy_Draw.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <param name="tab" type="notebook">
+    <page name="Gates" appearance="minimal" _gui-text="Logic gates">
+      <param name="desc1" type="description" appearance="header">Gate selection</param>      
+      <param name="ANDgate" type="boolean" _gui-text="AND gate">1</param>
+      <param name="ORgate" type="boolean" _gui-text="OR gate">0</param>
+      <param name="XORgate" type="boolean" _gui-text="XOR gate">0</param>
+      <param name="NOTgate" type="boolean" _gui-text="NOT gate">0</param>
+      <param name="NANDgate" type="boolean" _gui-text="NAND gate">0</param>
+      <param name="NORgate" type="boolean" _gui-text="NOR gate">0</param>
+      <param name="XNORgate" type="boolean" _gui-text="XNOR gate">0</param>
+      
+      <param name="desc1" type="description" appearance="header">Input signal configuration (does not affect NOT gate)</param>      
+      <param name="nInput" type="int" min="2" max="6" _gui-text="Number of inputs">2</param>
+      <param name="InputTypes" type="string" _gui-text="Input config (top to bottom) [1 or 0]">1,1</param>
+      <_param name="instructions" type="description" xml:space="preserve">1: regular input
+0: inverted input
+Ex: 0,1,1 (3 inputs)
+Top input is inverted, the others are regular</_param>
+    </page>
+    <page name="SignalsAndExpressions" appearance="minimal" _gui-text="Signals and Expressions">
+      
+      <param name="fontSize" type="float" min="0.1" max="2000" precision="1" _gui-text="Font size:">5.0</param>
+      
+      <param name="desc1" type="description" appearance="header">Signals</param>   
+      
+      <param name="flagSignal" type="boolean" _gui-text="Create signal">0</param>
+      <param name="signal" type="optiongroup" appearance="minimal" _gui-text="Signal type:">
+          <_option value="custom">Custom</_option>
+          <_option value="GND">GND</_option>
+          <_option value="common">common</_option>
+          <_option value="+vcc">+Vcc</_option>
+          <_option value="-vcc">-Vcc</_option>
+          <_option value="+5V">+5V</_option>
+          <_option value="-5V">-5V</_option>
+          <_option value="+15V">+15V</_option>
+          <_option value="-15V">-15V</_option>
+      </param>
+      <param name="signalVal" type="string" _gui-text="Custom label (for 'Custom' type)">A</param>
+      <param name="signalRot" type="optiongroup" appearance="minimal" _gui-text="Direction">
+        <_option value="0">North</_option>
+        <_option value="90">West</_option>
+        <_option value="-90">East</_option>
+        <_option value="180">South</_option>
+      </param>
+      <param name="signalDrawLine" type="boolean" _gui-text="Draw line">1</param>
+      
+      <param name="desc1" type="description" appearance="header">Boolean expressions</param>   
+      
+      <param name="flagExpression" type="boolean" _gui-text="Create boolean expression">0</param>
+      <param name="boolExpression" type="string" _gui-text="Boolean expression:">A \AND B</param>
+      <_param name="instructions" type="description" xml:space="preserve">
+Valid commands:
+\AND, \OR, \XOR, XNOR  : no arguments needed
+\NOT{...} : requires one argument
+
+</_param>
+    </page>
+  </param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu _name="fsmMLK"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">logicGates.py</command>
+  </script>
+</inkscape-extension>
