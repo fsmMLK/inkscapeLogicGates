@@ -124,7 +124,7 @@ Examples:
 
 # Examples
 
-<img src="docs/images/Example_minterms.png" width="700px"/>
+<img src="docs/images/Example_minterms.png" width="600px"/>
 
 <img src="docs/images/Example_circuit.png" width="800px"/>
 
