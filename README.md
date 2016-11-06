@@ -99,6 +99,8 @@ This tab is presented in two sections, *Signals* and *Boolean Expressions*. The 
 
 **Direction:** Direction of the line segment.
 
+<img src="docs/images/SignalDirection.png" width="300px"/>
+
 **Draw line:** signal line toggle.
 
 <img src="docs/images/SignalLines.png" width="200px"/>
