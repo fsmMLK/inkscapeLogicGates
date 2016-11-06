@@ -103,7 +103,7 @@ This tab is presented in two sections, *Signals* and *Boolean Expressions*. The 
 
 **Draw line:** signal line toggle.
 
-<img src="docs/images/SignalLines.png" width="150px"/>
+<img src="docs/images/SignalLines.png" width="200px"/>
 
 #### Boolean Expressions section
 
