@@ -145,7 +145,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
           text=r'-15\volt'
         
         self.drawV(root_layer,position,angleDeg=so.signalRot,nodalVal=text,drawLine=so.signalDrawLine)
-    
+        return
   #---------------------------------------------
   def createInput(self,flagTrue,parent,position=[0, 0],extraLength=0.0,label='input'):
     """ Creates input to logic Gates

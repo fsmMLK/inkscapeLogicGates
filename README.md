@@ -36,6 +36,11 @@ inkscape/extensions/
             `-- logicGates.inx
 ```
 
+**LaTeX package requirement**
+
+If LaTeX support is enables (see below), you will need in your system the following packages: amsmath, amsthm, amsbsy, amsfonts, amssymb, siunitx, steinmetz
+
+
 **Disabling LaTeX support of inkscapeMadeEasy**
 
 Many of the methods implemented in inkscapeMadeEasy project use LaTeX to generate text. To this end I decided to employ the excellent extension **textext** from Pauli Virtanen  <https://pav.iki.fi/software/textext/>. 
