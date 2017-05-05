@@ -93,7 +93,7 @@ Examples:
 
 **Type:** You can select the type of Latch/Flip-flop.
 
-<img src="docs/images/LatchTypes.png" width="700px"/>
+<img src="docs/images/LatchTypes.png" width="600px"/>
 
 **Control Gate:** You can include a control gate, by level (Latch) or edge (Flip-flop)
 
@@ -101,7 +101,7 @@ Examples:
   - active on HIGH (for latches) or on rising edge (for F.F.)
   - active on LOW (for latches) or on falling edge (for F.F.)
 
-<img src="docs/images/Latch_controlGate.png" width="700px"/>
+<img src="docs/images/Latch_controlGate.png" width="500px"/>
 
 **Asynchronous Preset:** Add asynchronous Preset signal. You can select between active HIGE or LOW.
 
