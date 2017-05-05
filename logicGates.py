@@ -25,6 +25,12 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     self.OptionParser.add_option("--nInput",action="store", type="int",dest="nInput", default=2)
     self.OptionParser.add_option("--InputTypes", action="store", type="string", dest="InputTypes", default='11')
 
+    self.OptionParser.add_option("--latchType",action="store", type="string",dest="latchType", default='none')
+    self.OptionParser.add_option("--latchGate",action="store", type="string",dest="latchGate", default='none')
+    self.OptionParser.add_option("--latchGateLogic",action="store", type="string",dest="latchGateLogic", default='HIGH')
+    self.OptionParser.add_option("--latchPreset",action="store", type="string",dest="latchPreset", default='0')
+    self.OptionParser.add_option("--latchClear",action="store", type="string",dest="latchClear", default='0')
+
     self.OptionParser.add_option("--flagSignal", action="store", type="inkbool", dest="flagSignal", default=False)
     self.OptionParser.add_option("--signal",action="store", type="string",dest="signal", default='GND')
     self.OptionParser.add_option("--signalVal", action="store", type="string", dest="signalVal", default='E') 
@@ -54,7 +60,6 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     root_layer = self.document.getroot()
     
     so.tab = so.tab.replace('"','')   # removes de exceding double quotes from the string
-    
     
     #latex related preamble
     self.preambleFile=os.getcwd() + '/textextLib/CircuitSymbolsLatexPreamble.tex'
@@ -98,6 +103,17 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         
       if so.NOTgate:
         self.createNOT(root_layer,position)
+        
+    # --------------------------
+    # Latches and Flip-flops
+    #---------------------------
+    
+    if so.tab=='Latches':
+      if so.latchGateLogic=='HIGH':
+        logic=True
+      else:
+        logic=False
+      self.createLatch(root_layer,position,type=so.latchType,controlGate=so.latchGate,controlGateLogic=logic,asynPreset=int(so.latchPreset),asynClear=int(so.latchClear))
 
     # --------------------------
     # SignalsAndExpressions
@@ -146,42 +162,92 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         
         self.drawV(root_layer,position,angleDeg=so.signalRot,nodalVal=text,drawLine=so.signalDrawLine)
         return
+      
+  def createSignal(self,flagTrue,parent,position=[0, 0],direction='E',extraLength=0.0,label='input',name=None,fontSizeFactor=1.0,isClock=False):
+    """ Creates signals to logic Gates (inputs or outputs)
+    
+    flagTrue: TRUE: regular input.  FALSE: NOT input
+    parent: parent object
+    position: position [x,y]
+    direction: orientation of the signal. Values possible: 'N', 'S', 'W', 'E'
+    extraLength: add extra lenght to the input line. default: 0.0
+    label: label of the object (it can be repeated)
+    name: Name of the signal. In ``None`` (default) no name is added
+    fontSizeFactor: font scale factor. Default: 1.0
+    isClock: input is clock type. Default: False
+    """
+    
+    group = self.createGroup(parent,label)
+    elem = self.createGroup(group,label)
+    
+    if flagTrue:
+      inkDraw.line.relCoords( elem,[[-self.lengthTerm-extraLength, 0]], position,label, self.lineStyle)
+      
+    else:
+      inkDraw.line.absCoords(elem, [[-5.5, 0],[-self.lengthTerm-extraLength,0]], position,label, self.lineStyle)
+      inkDraw.circle.centerRadius(elem, [-3,0], 2, position,label, inkDraw.lineStyle.setSimpleBlack(1.2))
+    
+    if isClock:
+      inkDraw.line.absCoords( elem,[[0, -4],[4,0],[0,4]], position,label, inkDraw.lineStyle.setSimpleBlack(0.9))
+
+    if isClock:
+      offsetText=self.textOffsetSmall*fontSizeFactor+4
+    else:
+      offsetText=self.textOffsetSmall*fontSizeFactor
+    
+    
+    if direction=='N':
+      self.rotateElement(elem,position,-90)  # y direction is inverted
+      posText=[position[0],position[1]+offsetText]
+      justif='tc'
+    if direction=='S':
+      self.rotateElement(elem,position,90)  # y direction is inverted
+      posText=[position[0],position[1]-offsetText]
+      justif='bc'
+    if direction=='E':
+      self.rotateElement(elem,position,180)  # y direction is inverted
+      posText=[position[0]-offsetText,position[1]]
+      justif='cr'
+    if direction=='W':
+      posText=[position[0]+offsetText,position[1]]
+      justif='cl'
+      
+    if name:
+      inkDraw.text.latex(self,group,name,position=posText,fontSize=self.fontSizeSmall*fontSizeFactor,refPoint=justif,preambleFile=self.preambleFile)
+    
   #---------------------------------------------
-  def createInput(self,flagTrue,parent,position=[0, 0],extraLength=0.0,label='input'):
+  def createInput(self,flagTrue,parent,position=[0, 0],extraLength=0.0,label='input',name=None,fontSizeFactor=1.0):
     """ Creates input to logic Gates
     
     flagTrue: TRUE: regular input.  FALSE: NOT input
     parent: parent object
     position: position [x,y]
-    label: label of the object (it can be repeated)
     extraLength: add extra lenght to the input line. default: 0.0
+    label: label of the object (it can be repeated)
+    name: Name of the signal. In ``None`` (default) no name is added
+    fontSizeFactor: font scale factor. Default: 1.0
     """
-
-    if flagTrue:
-      inkDraw.line.relCoords( parent,[[-self.lengthTerm-extraLength, 0]], position,label, self.lineStyle)
-      
-    else:
-      group = self.createGroup(parent,label)
-      inkDraw.line.absCoords(group, [[-5.5, 0],[-self.lengthTerm-extraLength,0]], position,label, self.lineStyle)
-      inkDraw.circle.centerRadius(group, [-3,0], 2, position,label, inkDraw.lineStyle.setSimpleBlack(1.2))
+    direction='W'
+    self.createSignal(flagTrue,parent,position,direction,extraLength,label,name,fontSizeFactor)
     
+     
   #---------------------------------------------
-  def createOutput(self,flagTrue,parent,position=[0, 0],extraLength=0.0,label='output'):
+  def createOutput(self,flagTrue,parent,position=[0, 0],extraLength=0.0,label='output',name=None,fontSizeFactor=1.0):
     """ Creates output to logic Gates
     
     flagTrue: TRUE: regular input.  FALSE: NOT input
     parent: parent object
     position: position [x,y]
-    label: label of the object (it can be repeated)
     extraLength: add extra lenght to the input line. default: 0.0
+    label: label of the object (it can be repeated)
+    name: Name of the signal. In ``None`` (default) no name is added
+    fontSizeFactor: font scale factor. Default: 1.0
     """
+    direction='E'
     if flagTrue:
-      inkDraw.line.relCoords( parent,[[self.lengthTerm+extraLength, 0]], position,label, self.lineStyle)
-      
+      self.createSignal(flagTrue,parent,[position[0],position[1]],direction,extraLength,label,name,fontSizeFactor)
     else:
-      group = self.createGroup(parent,label)
-      inkDraw.line.absCoords(group, [[5, 0],[self.lengthTerm+extraLength,0]], position,label, self.lineStyle)
-      inkDraw.circle.centerRadius(group, [2.5,0], 2, position,label, inkDraw.lineStyle.setSimpleBlack(1.2))
+      self.createSignal(flagTrue,parent,[position[0]-0.5,position[1]],direction,extraLength+0.5,label,name,fontSizeFactor)
       
   #---------------------------------------------
   def drawANDBody(self,parent,position=[0, 0],label='BodyAND'):
@@ -468,7 +534,74 @@ class LogicGates(inkBase.inkscapeMadeEasy):
       self.rotateElement(group,position,angleDeg)
       
     return group;
+  
+  
+  def createLatch(self,parent,position=[0, 0],label='Latch',type='SRnor',controlGate='none',controlGateLogic=True,asynPreset=0,asynClear=0):
+    """ draws latches
     
+    parent: parent object
+    position: position [x,y]
+    label: label of the object (it can be repeated)
+    type: type of latch/Flip-flop. Available values: 'SRnor','SRnand','D','JK','T'
+    controlGate: type of the gate input: available values: 'none','level', 'edge'
+    controlGateLogic: True: activate HIGH (or rising edge)  False: activate LOW (or falling edge)  
+    asynPreset: Asyncrhonous preset
+    asynClear: Asyncrhonous clear
+        1: active HIGH
+        0: no input
+        -1: active LOW
+    """
+    group = self.createGroup(parent,label)
+    
+    if type=='SRnor' or type=='SRnand' or type=='JK':
+      w=40
+      h=50
+      dist_signal=15
+      y_controlGate=0
+    
+    if type=='D' or type=='T':
+      w=40
+      h=40
+      dist_signal=10
+      y_controlGate=10
+
+    x_min=position[0]-w/2.0
+    x_max=position[0]+w/2.0
+    y_min=position[1]+h/2.0
+    y_max=position[1]-h/2.0
+    
+    inkDraw.rectangle.widthHeightCenter(group, centerPoint=position, width=w, height=h,lineStyle=inkDraw.lineStyle.setSimpleBlack(1.5))
+        
+    self.createOutput(True,group,position=[x_max,position[1]-dist_signal],extraLength=0.0,label='Q',name='Q',fontSizeFactor=1.2)
+    self.createOutput(True,group,position=[x_max,position[1]+dist_signal],extraLength=0.0,label='notQ',name='\NOT{Q}',fontSizeFactor=1.2)
+    
+    #Asyncronous Preset and Clear
+    if asynPreset==1:
+      self.createSignal(True,group,position=[position[0],y_max],direction='N',name='PRE',fontSizeFactor=0.8)
+    elif asynPreset==-1:
+      self.createSignal(False,group,position=[position[0],y_max],direction='N',name='PRE',fontSizeFactor=0.8)
+      
+    if asynClear==1:
+      self.createSignal(True,group,position=[position[0],y_min],direction='S',name='CLR',fontSizeFactor=0.8)
+    elif asynClear==-1:
+      self.createSignal(False,group,position=[position[0],y_min],direction='S',name='CLR',fontSizeFactor=0.8)
+    
+    if controlGate=='level':
+      self.createSignal(controlGateLogic,group,position=[x_min,position[1]+y_controlGate],direction='W',name='EN',isClock=False,fontSizeFactor=0.8)
+    if controlGate=='edge':
+      self.createSignal(controlGateLogic,group,position=[x_min,position[1]+y_controlGate],direction='W',name='CK',isClock=True,fontSizeFactor=0.8)
+      
+    if type=='SRnor' or type=='JK':
+      self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name=type[0],fontSizeFactor=1.2)
+      self.createInput(True,group,position=[x_min,position[1]+dist_signal],extraLength=0.0,name=type[1],fontSizeFactor=1.2)
+    elif type=='SRnand':
+      input1=r'\NOT{%s}' % type[0]
+      input2=r'\NOT{%s}' % type[1]
+      self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name=input1,fontSizeFactor=1.2)
+      self.createInput(True,group,position=[x_min,position[1]+dist_signal],extraLength=0.0,name=input2,fontSizeFactor=1.2)
+    elif type=='D' or type=='T':
+      self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name=type,fontSizeFactor=1.2)
+
 if __name__ == '__main__':
   logic = LogicGates()
   logic.affect()

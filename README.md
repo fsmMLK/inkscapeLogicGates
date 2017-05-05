@@ -9,6 +9,7 @@ The main features are
 
  - you can use up to six inputs for each gate (except NOT gate)
  - each input can be set to be inverted (negated)
+ - Latch and flip-flop generator, with optional control gates and asynchronous Preset and Clear
  - signal labeling generator with a few commonly used signals pre defined
  - boolean expression editor, with optional LaTeX support and pre defined logic operator functions.
 
@@ -55,11 +56,13 @@ Please refer to <https://fsmmlk.github.io/inkscapeMadeEasy/#installation-and-req
 
 # Usage
 
-This extension is presented in two tabs, **Logic gates** and  **Signals and Expressions**. The extension has two modes of operation. Depending on which tab is on top, the extension will create different elements in your document as soon as you click on `Apply` button (or check `live preview`). The modes are
+This extension is presented in three tabs, **Logic gates**, **Latch and F.F.** and  **Signals and Expressions**. The extension has three modes of operation. Depending on which tab is on top, the extension will create different elements in your document as soon as you click on `Apply` button (or check `live preview`). The modes are
 
   1- If `Logic gates` tab is on top, then the extension is set to draw logic gates
 
-  2- If `Signals and Expressions` tab is on top, then the extension is ready to create signals and/or boolean expressions.
+  2- If `Latch and F.F.` tab is on top, then the extension is set to draw Latches and Flip-flops
+
+  3- If `Signals and Expressions` tab is on top, then the extension is ready to create signals and/or boolean expressions.
 
 ### Logic Gates tab
 
@@ -82,6 +85,29 @@ The first element of this list is associated to the input at the top. If this st
 Examples:
 
 <img src="docs/images/InputConfig.png" width="700px"/>
+
+
+### Latch and F.F. tab
+
+<img src="docs/images/Latch_Tab.png" width="400px"/>
+
+**Type:** You can select the type of Latch/Flip-flop.
+
+<img src="docs/images/LatchTypes.png" width="800px"/>
+
+**Control Gate:** You can include a control gate, by level (Latch) or edge (Flip-flop)
+
+**Control Activation Logic:** You can select the type of activation logic
+  - active on HIGH (for latches) or on rising edge (for F.F.)
+  - active on LOW (for latches) or on falling edge (for F.F.)
+
+<img src="docs/images/Latch_controlGate.png" width="800px"/>
+
+**Asynchronous Preset:** Add asynchronous Preset signal. You can select between active HIGE or LOW.
+
+**Asynchronous Clear:** Add asynchronous Clear signal. You can select between active HIGE or LOW.
+
+<img src="docs/images/Latch_asynchronousInputs.png" width="250px"/>
 
 ### Signals and Expressions tab
 

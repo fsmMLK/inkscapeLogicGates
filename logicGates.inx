@@ -25,6 +25,38 @@
 Ex: 0,1,1 (3 inputs)
 Top input is inverted, the others are regular</_param>
     </page>
+    <page name="Latches" appearance="minimal" _gui-text="Latch and F.F.">
+      <param name="latchType" type="optiongroup" appearance="minimal" _gui-text="Type:">
+        <_option value="SRnor">SR postive (NOR)</_option>
+        <_option value="SRnand">SR negative (NAND)</_option>
+        <_option value="D">D</_option>
+        <_option value="JK">JK</_option>
+        <_option value="T">T</_option>
+      </param>
+      
+      <param name="latchGate" type="optiongroup" appearance="minimal" _gui-text="Control gate:">
+        <_option value="none">None</_option>
+        <_option value="level">Level (Latch)</_option>
+        <_option value="edge">Edge (Flip-flop)</_option>
+      </param>
+      <param name="latchGateLogic" type="optiongroup" _gui-text="Control activation logic:">
+        <_option value="HIGH">high (or rising edge)</_option>
+        <_option value="LOW">low (or falling edge)</_option>
+      </param>
+     
+      <param name="desc1" type="description" appearance="header">Asynchronous inputs</param>     
+      <param name="latchPreset" type="optiongroup" appearance="minimal" _gui-text="Preset:">
+        <_option value="0">None</_option>
+        <_option value="1">Active HIGH</_option>
+        <_option value="-1">Active LOW</_option>
+      </param>
+      
+      <param name="latchClear" type="optiongroup" appearance="minimal" _gui-text="Clear:">
+        <_option value="0">None</_option>
+        <_option value="1">Active HIGH</_option>
+        <_option value="-1">Active LOW</_option>
+      </param>
+    </page>
     <page name="SignalsAndExpressions" appearance="minimal" _gui-text="Signals and Expressions">
       
       <param name="fontSize" type="float" min="0.1" max="2000" precision="1" _gui-text="Font size:">5.0</param>
@@ -67,7 +99,9 @@ Valid commands:
   <effect>
     <object-type>all</object-type>
     <effects-menu>
-      <submenu _name="fsmMLK"/>
+      <submenu _name="fsmMLK">
+        <submenu name="Circuit symbols"/>
+      </submenu>
     </effects-menu>
   </effect>
   <script>
