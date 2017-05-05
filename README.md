@@ -103,9 +103,9 @@ Examples:
 
 <img src="docs/images/Latch_controlGate.png" width="500px"/>
 
-**Asynchronous Preset:** Add asynchronous Preset signal. You can select between active HIGE or LOW.
+**Asynchronous Preset:** Add asynchronous Preset signal. You can select between active HIGH or LOW.
 
-**Asynchronous Clear:** Add asynchronous Clear signal. You can select between active HIGE or LOW.
+**Asynchronous Clear:** Add asynchronous Clear signal. You can select between active HIGH or LOW.
 
 <img src="docs/images/Latch_asynchronousInputs.png" width="400px"/>
 
