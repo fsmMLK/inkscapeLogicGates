@@ -97,11 +97,11 @@ Examples:
 
 **Size:** You can select the size of the symbols. You can choose between 3 sizes, shown below.
 
-<img src="docs/images/Latch_sizes.png" width="600px"/>
+<img src="docs/images/Latch_sizes.png" width="500px"/>
 
 **Suppress Q and not Q outputs:** You can choose any output (Q and NOT Q) to be suppressed.
 
-<img src="docs/images/Latch_outputSuppress.png" width="600px"/>
+<img src="docs/images/Latch_outputSuppress.png" width="500px"/>
 
 **Control Gate:** You can include a control gate, by level (Latch) or edge (Flip-flop)
 
