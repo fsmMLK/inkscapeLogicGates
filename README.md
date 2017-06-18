@@ -95,6 +95,14 @@ Examples:
 
 <img src="docs/images/LatchTypes.png" width="600px"/>
 
+**Size:** You can select the size of the symbols. You can choose between 3 sizes, shown below.
+
+<img src="docs/images/Latch_sizes.png" width="600px"/>
+
+**Suppress Q and not Q outputs:** You can choose any output (Q and NOT Q) to be suppressed.
+
+<img src="docs/images/Latch_outputSuppress.png" width="600px"/>
+
 **Control Gate:** You can include a control gate, by level (Latch) or edge (Flip-flop)
 
 **Control Activation Logic:** You can select the type of activation logic
@@ -160,5 +168,9 @@ Examples:
 <img src="docs/images/Example_minterms.png" width="600px"/>
 
 <img src="docs/images/Example_circuit.png" width="800px"/>
+
+<img src="docs/images/Example_shift_register_4bits.png" width="800px"/>
+
+<img src="docs/images/Example_Synchonous_counter_2N.png" width="800px"/>
 
 

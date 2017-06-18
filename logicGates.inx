@@ -34,6 +34,15 @@ Top input is inverted, the others are regular</_param>
         <_option value="T">T</_option>
       </param>
       
+     <param name="latchSize" type="optiongroup" appearance="minimal" _gui-text="Size:">
+        <_option value="large">Large</_option>
+        <_option value="medium">Medium</_option>
+        <_option value="small">Small</_option>
+      </param>
+      
+      <param name="latchSuppressq" type="boolean" _gui-text="Suppress Q output">0</param>
+      <param name="latchSuppressNOTq" type="boolean" _gui-text="Suppress NOT{Q} output">0</param>
+            
       <param name="latchGate" type="optiongroup" appearance="minimal" _gui-text="Control gate:">
         <_option value="none">None</_option>
         <_option value="level">Level (Latch)</_option>
@@ -68,6 +77,10 @@ Top input is inverted, the others are regular</_param>
           <_option value="custom">Custom</_option>
           <_option value="GND">GND</_option>
           <_option value="common">common</_option>
+          <_option value="CLK">CLK</_option>
+          <_option value="EN">EN</_option>
+          <_option value="CLKi">NOT{CLK}</_option>
+          <_option value="ENi">NOT{EN}</_option>
           <_option value="+vcc">+Vcc</_option>
           <_option value="-vcc">-Vcc</_option>
           <_option value="+5V">+5V</_option>
