@@ -67,9 +67,7 @@ Top input is inverted, the others are regular</_param>
       </param>
     </page>
     <page name="SignalsAndExpressions" appearance="minimal" _gui-text="Signals and Expressions">
-      
-      <param name="fontSize" type="float" min="0.1" max="2000" precision="1" _gui-text="Font size:">5.0</param>
-      
+            
       <param name="desc1" type="description" appearance="header">Signals</param>   
       
       <param name="flagSignal" type="boolean" _gui-text="Create signal">0</param>

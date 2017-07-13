@@ -123,9 +123,6 @@ Examples:
 
 This tab is presented in two sections, *Signals* and *Boolean Expressions*. The first create signal nodes to add to your logic circuit. The second creates a text element with a boolean expression.
 
-
-**Font size:** Adjust the font size for both expression and signal labels.
-
 #### Create Signal section
 
 **Create signal:** Toggles the signal label creator. Check it draw it.

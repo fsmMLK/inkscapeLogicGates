@@ -44,7 +44,6 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     
     self.OptionParser.add_option("--flagExpression", action="store", type="inkbool", dest="flagExpression", default=False)
     self.OptionParser.add_option("--boolExpression", action="store", type="string", dest="boolExpression", default='')
-    self.OptionParser.add_option("--fontSize", action="store", type="float", dest="fontSize", default=5.0)
 
     self.lineStyle=inkDraw.lineStyle.setSimpleBlack()
     self.lineStyleBody=inkDraw.lineStyle.setSimpleBlack(1.8)
@@ -69,7 +68,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     #latex related preamble
     self.preambleFile=os.getcwd() + '/textextLib/CircuitSymbolsLatexPreamble.tex'
 
-    self.fontSize=float(so.fontSize)
+    self.fontSize=6.0
     self.fontSizeSmall=self.fontSize*0.7
     self.textOffset = self.fontSize/1.5  # offset between symbol and text
     self.textOffsetSmall = self.fontSizeSmall/2  # offset between symbol and text
@@ -573,7 +572,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     suppressNOTq: suppress drawing he inverted state output. Default: False
     """
     group = self.createGroup(parent,label)
-    
+        
     if type=='SRnor' or type=='SRnand' or type=='JK':
       if size=='large':
         w=50
