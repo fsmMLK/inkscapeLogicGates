@@ -627,13 +627,16 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     inkDraw.rectangle.widthHeightCenter(group, centerPoint=position, width=w, height=h,lineStyle=inkDraw.lineStyle.setSimpleBlack(1.5))
         
     if not suppressq:     
-      self.createOutput(True,group,position=[x_max,position[1]-dist_signal],extraLength=0.0,label='Q',name='$Q$',fontSizeFactor=fontSizeFactorG)
+      if not inkDraw.useLatex:
+        self.createOutput(True,group,position=[x_max,position[1]-dist_signal],extraLength=0.0,label='Q',name='Q',fontSizeFactor=fontSizeFactorG)
+      else:
+        self.createOutput(True,group,position=[x_max,position[1]-dist_signal],extraLength=0.0,label='Q',name='$Q$',fontSizeFactor=fontSizeFactorG)
 
-    if not inkDraw.useLatex:
-        self.createOutput(True,group,position=[x_max,position[1]+dist_signal],extraLength=0.0,label='notQ',name=u'$\u00ACQ$',fontSizeFactor=fontSizeFactorG)
-    else:
-      if not suppressNOTq:
-        self.createOutput(True,group,position=[x_max,position[1]+dist_signal],extraLength=0.0,label='notQ',name='\NOT{Q}',fontSizeFactor=fontSizeFactorG)    
+    if not suppressNOTq:
+      if not inkDraw.useLatex:
+        self.createOutput(True,group,position=[x_max,position[1]+dist_signal],extraLength=0.0,label='notQ',name=u'\u00ACQ',fontSizeFactor=fontSizeFactorG)
+      else:
+        self.createOutput(True,group,position=[x_max,position[1]+dist_signal],extraLength=0.0,label='notQ',name=r'$\NOT{Q}$',fontSizeFactor=fontSizeFactorG)    
     
     #Asyncronous Preset and Clear
     if asynPreset==1:
@@ -652,8 +655,13 @@ class LogicGates(inkBase.inkscapeMadeEasy):
       self.createSignal(controlGateLogic,group,position=[x_min,position[1]+y_controlGate],direction='W',name='CLK',isClock=True,fontSizeFactor=fontSizeFactorS)
       
     if type=='SRnor' or type=='JK':
-      self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name='$'+type[0]+'$',fontSizeFactor=fontSizeFactorG)
-      self.createInput(True,group,position=[x_min,position[1]+dist_signal],extraLength=0.0,name='$'+type[1]+'$',fontSizeFactor=fontSizeFactorG)
+      if not inkDraw.useLatex:
+        self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name=type[0],fontSizeFactor=fontSizeFactorG)
+        self.createInput(True,group,position=[x_min,position[1]+dist_signal],extraLength=0.0,name=type[1],fontSizeFactor=fontSizeFactorG)
+      else:
+        self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name='$'+type[0]+'$',fontSizeFactor=fontSizeFactorG)
+        self.createInput(True,group,position=[x_min,position[1]+dist_signal],extraLength=0.0,name='$'+type[1]+'$',fontSizeFactor=fontSizeFactorG)
+        
     elif type=='SRnand':
       if not inkDraw.useLatex:
         input1=u'\u00AC%s' % type[0]
@@ -664,8 +672,11 @@ class LogicGates(inkBase.inkscapeMadeEasy):
       self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name=input1,fontSizeFactor=fontSizeFactorG)
       self.createInput(True,group,position=[x_min,position[1]+dist_signal],extraLength=0.0,name=input2,fontSizeFactor=fontSizeFactorG)
     elif type=='D' or type=='T':
-      self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name='$'+type+'$',fontSizeFactor=fontSizeFactorG)
-
+      if not inkDraw.useLatex:
+        self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name=type,fontSizeFactor=fontSizeFactorG)
+      else:
+        self.createInput(True,group,position=[x_min,position[1]-dist_signal],extraLength=0.0,name='$'+type+'$',fontSizeFactor=fontSizeFactorG)
+        
 if __name__ == '__main__':
   logic = LogicGates()
   logic.affect()
