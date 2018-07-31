@@ -15,7 +15,7 @@
    viewBox="0 0 793.7008056641 1122.51965332"
    version="1.1"
    id="svg2"
-   inkscape:version="0.92.1 unknown"
+   inkscape:version="0.92.3 (unknown)"
    sodipodi:docname="Latch_outputSuppress.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -30,9 +30,9 @@
      inkscape:window-height="1062"
      id="namedview4"
      showgrid="true"
-     inkscape:zoom="2.378608799841"
-     inkscape:cx="463.8833201271"
-     inkscape:cy="725.5494607963"
+     inkscape:zoom="4.757217597172"
+     inkscape:cx="466.3765959213"
+     inkscape:cy="797.8662787551"
      inkscape:window-x="-4"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,22 +59,22 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:100%;font-family:Verdana;-inkscape-font-specification:Verdana;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="390"
+     x="525.166015625"
      y="272.5196533203"
      id="text10848"><tspan
        sodipodi:role="line"
        id="tspan10846"
-       x="390"
+       x="525.166015625"
        y="272.5196533203">Q Suppressed</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:100%;font-family:Verdana;-inkscape-font-specification:Verdana;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="525"
+     x="389.833984375"
      y="272.5196533203"
      id="text10852"><tspan
        sodipodi:role="line"
        id="tspan10850"
-       x="525"
+       x="389.833984375"
        y="272.5196533203">NOT Q suppressed</tspan></text>
   <g
      inkscape:label="Latch"

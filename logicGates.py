@@ -552,7 +552,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
       
     return group;
   
-  
+  #---------------------------------------------
   def createLatch(self,parent,position=[0, 0],label='Latch',type='SRnor',controlGate='none',controlGateLogic=True,asynPreset=0,asynClear=0,size='large',suppressq=False,suppressNOTq=False):
     """ draws latches
     
