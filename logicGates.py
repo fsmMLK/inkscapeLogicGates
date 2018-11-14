@@ -10,7 +10,7 @@ import re
 #---------------------------------------------
 class LogicGates(inkBase.inkscapeMadeEasy):
   def __init__(self):
-    inkex.Effect.__init__(self)
+    inkBase.inkscapeMadeEasy.__init__(self)
 
     self.OptionParser.add_option("--tab",action="store", type="string",dest="tab", default="object") 
     
@@ -62,6 +62,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 
     #root_layer = self.current_layer
     root_layer = self.document.getroot()
+    #root_layer = self.getcurrentLayer()
     
     so.tab = so.tab.replace('"','')   # removes de exceding double quotes from the string
     
@@ -78,7 +79,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
     # --------------------------
     # Gates
     #---------------------------
-    
+            
     if so.tab=='Gates':
       
       N_input=so.nInput
@@ -132,7 +133,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         else:
           value = '$'+so.boolExpression+'$'
           
-        inkDraw.text.latex(self,root_layer,value,[position[0],position[1]+self.totalHeight], self.fontSize,refPoint='cc',preambleFile=self.preambleFile)
+        inkDraw.text.latex(self,root_layer,value,[position[0],position[1]], self.fontSize,refPoint='cc',preambleFile=self.preambleFile)
 
       if so.flagSignal:
           

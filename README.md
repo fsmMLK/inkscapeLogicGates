@@ -56,6 +56,8 @@ Please refer to <https://fsmmlk.github.io/inkscapeMadeEasy/#installation-and-req
 
 # Usage
 
+The extension can be found under `extensions > fsmMLK > Circuit symbols` menu.
+
 This extension is presented in three tabs, **Logic gates**, **Latch and F.F.** and  **Signals and Expressions**. The extension has three modes of operation. Depending on which tab is on top, the extension will create different elements in your document as soon as you click on `Apply` button (or check `live preview`). The modes are
 
   1- If `Logic gates` tab is on top, then the extension is set to draw logic gates
