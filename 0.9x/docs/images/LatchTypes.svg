@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 793.7008056641 1122.51965332"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.92.1 unknown"
+   sodipodi:docname="LatchTypes.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="882"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="2.068621679731"
+     inkscape:cx="201.6464079693"
+     inkscape:cy="821.5126608149"
+     inkscape:window-x="1916"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:snap-text-baseline="true">
+    <inkscape:grid
+       id="grid5500"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g9004"
+     inkscape:label="Latch"
+     transform="translate(-35,-52.48034667969)">
+    <rect
+       id="rect8961"
+       inkscape:label="rectangle"
+       y="305"
+       x="70"
+       width="40"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       ry="None"
+       rx="None"
+       height="50" />
+    <g
+       id="g8970"
+       inkscape:label="Q">
+      <g
+         id="g8965"
+         transform="rotate(-180,110,315)"
+         inkscape:label="Q">
+        <path
+           id="path8963"
+           inkscape:label="Q"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 110,315 H 100"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-64.491331,672.702009)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" Q"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="content"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path8967"
+           style="fill:#000000;stroke-width:0"
+           d="m 228.59,477.3 0.11,0.06 0.1,0.05 0.11,0.06 0.1,0.07 0.1,0.06 0.1,0.08 0.09,0.07 0.1,0.08 0.09,0.08 0.08,0.09 0.09,0.09 0.08,0.09 0.08,0.1 0.07,0.1 0.08,0.1 0.07,0.11 0.06,0.11 0.06,0.11 0.06,0.11 0.06,0.12 0.05,0.12 0.04,0.12 0.05,0.12 0.03,0.13 0.04,0.13 0.03,0.13 0.03,0.13 0.02,0.13 0.01,0.14 0.02,0.13 v 0.14 0.14 c 0,2.03 -1.5,3.64 -3.31,3.64 v -0.25 c 0.97,0 2.32,-0.85 2.32,-3.39 0,-0.77 -0.12,-2.17 -1.17,-2.95 -0.22,0.56 -0.54,1.05 -1.13,1.05 v -0.21 c 0.54,0 0.76,-0.42 0.87,-1 v 0 c -0.34,-0.19 -0.66,-0.22 -0.88,-0.22 -0.51,0 -0.59,0.45 -0.59,0.6 0,0.29 0.21,0.62 0.6,0.62 v 0.21 c -0.51,0 -0.81,-0.42 -0.81,-0.83 0,-0.27 0.13,-0.46 0.14,-0.48 v 0 c -0.54,0.2 -1.66,0.93 -1.66,3.21 0,2.58 1.4,3.39 2.31,3.39 v 0.25 c -1.78,0 -3.3,-1.59 -3.3,-3.64 0,-2 1.5,-3.58 3.31,-3.58 0.31,0 0.66,0.06 0.95,0.15 0.15,-0.95 0.29,-1.86 1.21,-1.86 1.02,0 1.2,1.32 1.2,1.83 0,0.09 0,0.2 -0.1,0.2 -0.09,0 -0.1,-0.07 -0.11,-0.17 -0.06,-0.54 -0.48,-0.84 -0.91,-0.84 -0.47,0 -0.72,0.34 -0.95,0.97 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g8982"
+       inkscape:label="notQ">
+      <g
+         id="g8974"
+         transform="rotate(-180,110,345)"
+         inkscape:label="notQ">
+        <path
+           id="path8972"
+           inkscape:label="notQ"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 110,345 H 100"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-64.588254,702.702009)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" \\NOT{Q}"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g8980"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><line
+           id="line8976"
+           y2="485.4400024414"
+           x2="231.3099975586"
+           y1="485.4400024414"
+           x1="223.4299926758"
+           style="stroke-width:0.3980000019" /><path
+           id="path8978"
+           style="fill:#000000;stroke-width:0"
+           d="m 227.79,477.3 0.14,0.05 0.15,0.07 0.14,0.07 0.14,0.08 0.14,0.08 0.14,0.09 0.14,0.1 0.13,0.1 0.13,0.11 0.13,0.11 0.13,0.12 0.12,0.12 0.12,0.13 0.11,0.13 0.11,0.13 0.11,0.14 0.1,0.14 0.1,0.15 0.09,0.15 0.09,0.16 0.08,0.15 0.08,0.16 0.07,0.17 0.06,0.16 0.06,0.17 0.05,0.17 0.04,0.17 0.04,0.18 0.03,0.17 0.02,0.18 0.01,0.18 v 0.18 c 0,1.6 -1.05,2.67 -2.53,2.67 l -0.06,-0.25 c 0.99,0 1.72,-0.78 1.72,-2.11 0,-0.99 -0.51,-3.31 -2.18,-4.25 -0.05,0.35 -0.15,1.07 -0.88,1.07 v -0.21 c 0.42,0 0.61,-0.24 0.61,-0.85 0,-0.15 -0.01,-0.16 -0.11,-0.2 -0.26,-0.11 -0.56,-0.17 -0.83,-0.17 v 0 c -0.14,0 -0.46,0 -0.46,0.42 0,0.4 0.38,0.8 0.79,0.8 v 0.21 c -0.52,0 -1.01,-0.49 -1.01,-1.01 0,-0.2 0.06,-0.31 0.06,-0.32 v 0 c -0.78,0.31 -1.12,1.09 -1.12,1.98 0,0.69 0.26,2.1 1.02,3.17 0.73,1.01 1.66,1.47 2.39,1.47 l 0.06,0.25 c -2.15,0 -4.34,-2.26 -4.34,-4.57 0,-1.65 1.11,-2.65 2.55,-2.65 0.24,0 0.58,0.04 0.97,0.15 -0.04,-0.62 -0.04,-0.64 -0.04,-0.77 0,-0.32 0,-1.09 0.83,-1.09 1.18,0 1.66,1.82 1.66,1.92 0,0.07 -0.07,0.1 -0.11,0.1 -0.08,0 -0.1,-0.04 -0.12,-0.1 -0.24,-0.71 -0.82,-0.96 -1.16,-0.96 -0.46,0 -0.61,0.27 -0.71,1.03 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g8992"
+       inkscape:label="input">
+      <g
+         id="g8986"
+         inkscape:label="input">
+        <path
+           id="path8984"
+           inkscape:label="input"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 70,315 H 60"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-94.478432,673.339464)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" S"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g8990"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path8988"
+           style="fill:#000000;stroke-width:0"
+           d="m 226.9,481.09 -1.27,0.31 c -0.62,0.15 -1,0.68 -1,1.26 0,0.69 0.53,1.3 1.31,1.3 1.66,0 1.88,-1.63 1.94,-2.08 0.01,-0.06 0.01,-0.11 0.12,-0.11 0.13,0 0.13,0.05 0.13,0.23 v 2 c 0,0.17 0,0.24 -0.11,0.24 -0.07,0 -0.08,-0.01 -0.15,-0.13 l -0.35,-0.57 c -0.3,0.29 -0.7,0.7 -1.59,0.7 -1.11,0 -1.94,-0.88 -1.94,-1.93 0,-0.82 0.53,-1.55 1.3,-1.82 0.11,-0.04 0.62,-0.16 1.32,-0.32 0.26,-0.07 0.56,-0.14 0.84,-0.51 0.21,-0.26 0.31,-0.59 0.31,-0.92 0,-0.7 -0.5,-1.42 -1.33,-1.42 -0.29,0 -1.05,0.05 -1.58,0.54 -0.57,0.54 -0.6,1.17 -0.61,1.53 -0.01,0.1 -0.09,0.1 -0.12,0.1 -0.13,0 -0.13,-0.07 -0.13,-0.25 v -1.98 c 0,-0.17 0,-0.24 0.11,-0.24 0.07,0 0.08,0.02 0.15,0.13 0,0.01 0.03,0.03 0.36,0.56 0.3,-0.34 0.94,-0.69 1.83,-0.69 1.16,0 1.96,0.97 1.96,2.06 0,1 -0.66,1.81 -1.5,2.01 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g9002"
+       inkscape:label="input">
+      <g
+         id="g8996"
+         inkscape:label="input">
+        <path
+           id="path8994"
+           inkscape:label="input"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 70,345 H 60"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-94.321864,703.257452)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" R"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9000"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path8998"
+           style="fill:#000000;stroke-width:0"
+           d="m 227.76,480.61 0.09,0.03 0.09,0.02 0.09,0.03 0.08,0.03 0.09,0.03 0.08,0.03 0.08,0.04 0.08,0.04 0.08,0.04 0.07,0.04 0.07,0.04 0.07,0.05 0.07,0.04 0.07,0.05 0.06,0.05 0.06,0.05 0.06,0.05 0.05,0.06 0.06,0.05 0.04,0.06 0.05,0.06 0.04,0.06 0.04,0.06 0.03,0.07 0.04,0.06 0.02,0.07 0.03,0.06 0.02,0.07 0.01,0.07 0.01,0.07 0.01,0.07 v 0.07 c 0,0.95 -1.13,1.79 -2.6,1.79 h -3.12 v -0.31 h 0.24 c 0.77,0 0.78,-0.11 0.78,-0.47 v -5.23 c 0,-0.36 -0.01,-0.47 -0.78,-0.47 h -0.24 v -0.31 c 0.36,0.04 1.07,0.04 1.45,0.04 0.39,0 1.1,0 1.45,-0.04 v 0.31 h -0.23 c -0.77,0 -0.79,0.11 -0.79,0.47 v 2.51 0.22 2.58 c 0,0.22 0,0.34 0.22,0.37 0.1,0.02 0.39,0.02 0.59,0.02 0.89,0 2.01,-0.04 2.01,-1.48 0,-0.68 -0.24,-1.49 -1.72,-1.49 h -1.1 v -0.22 h 1.14 c 0.16,0 0.58,0 0.93,-0.34 0.38,-0.35 0.38,-0.66 0.38,-1.33 0,-0.64 0,-1.04 0.41,-1.42 0.4,-0.35 0.95,-0.41 1.25,-0.41 0.78,0 0.94,0.81 0.94,1.09 0,0.06 0,0.17 -0.12,0.17 -0.11,0 -0.11,-0.09 -0.12,-0.16 -0.06,-0.71 -0.41,-0.89 -0.66,-0.89 -0.49,0 -0.57,0.51 -0.71,1.44 l -0.13,0.79 c -0.18,0.64 -0.66,0.96 -1.21,1.15 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+  </g>
+  <g
+     transform="translate(45,-52.48034667969)"
+     inkscape:label="Latch"
+     id="g9108">
+    <rect
+       height="50"
+       rx="None"
+       ry="None"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       width="40"
+       x="70"
+       y="305"
+       inkscape:label="rectangle"
+       id="rect9060" />
+    <g
+       inkscape:label="Q"
+       id="g9070">
+      <g
+         inkscape:label="Q"
+         transform="rotate(-180,110,315)"
+         id="g9064">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 110,315 H 100"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="Q"
+           id="path9062" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9068"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" Q"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-64.491331,672.702009)"><path
+           inkscape:connector-curvature="0"
+           d="m 228.59,477.3 0.11,0.06 0.1,0.05 0.11,0.06 0.1,0.07 0.1,0.06 0.1,0.08 0.09,0.07 0.1,0.08 0.09,0.08 0.08,0.09 0.09,0.09 0.08,0.09 0.08,0.1 0.07,0.1 0.08,0.1 0.07,0.11 0.06,0.11 0.06,0.11 0.06,0.11 0.06,0.12 0.05,0.12 0.04,0.12 0.05,0.12 0.03,0.13 0.04,0.13 0.03,0.13 0.03,0.13 0.02,0.13 0.01,0.14 0.02,0.13 v 0.14 0.14 c 0,2.03 -1.5,3.64 -3.31,3.64 v -0.25 c 0.97,0 2.32,-0.85 2.32,-3.39 0,-0.77 -0.12,-2.17 -1.17,-2.95 -0.22,0.56 -0.54,1.05 -1.13,1.05 v -0.21 c 0.54,0 0.76,-0.42 0.87,-1 v 0 c -0.34,-0.19 -0.66,-0.22 -0.88,-0.22 -0.51,0 -0.59,0.45 -0.59,0.6 0,0.29 0.21,0.62 0.6,0.62 v 0.21 c -0.51,0 -0.81,-0.42 -0.81,-0.83 0,-0.27 0.13,-0.46 0.14,-0.48 v 0 c -0.54,0.2 -1.66,0.93 -1.66,3.21 0,2.58 1.4,3.39 2.31,3.39 v 0.25 c -1.78,0 -3.3,-1.59 -3.3,-3.64 0,-2 1.5,-3.58 3.31,-3.58 0.31,0 0.66,0.06 0.95,0.15 0.15,-0.95 0.29,-1.86 1.21,-1.86 1.02,0 1.2,1.32 1.2,1.83 0,0.09 0,0.2 -0.1,0.2 -0.09,0 -0.1,-0.07 -0.11,-0.17 -0.06,-0.54 -0.48,-0.84 -0.91,-0.84 -0.47,0 -0.72,0.34 -0.95,0.97 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9066" /></g>    </g>
+    <g
+       inkscape:label="notQ"
+       id="g9082">
+      <g
+         inkscape:label="notQ"
+         transform="rotate(-180,110,345)"
+         id="g9074">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 110,345 H 100"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="notQ"
+           id="path9072" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9080"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" \\NOT{Q}"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-64.588254,702.702009)"><line
+           style="stroke-width:0.3980000019"
+           x1="223.4299926758"
+           y1="485.4400024414"
+           x2="231.3099975586"
+           y2="485.4400024414"
+           id="line9076" /><path
+           inkscape:connector-curvature="0"
+           d="m 227.79,477.3 0.14,0.05 0.15,0.07 0.14,0.07 0.14,0.08 0.14,0.08 0.14,0.09 0.14,0.1 0.13,0.1 0.13,0.11 0.13,0.11 0.13,0.12 0.12,0.12 0.12,0.13 0.11,0.13 0.11,0.13 0.11,0.14 0.1,0.14 0.1,0.15 0.09,0.15 0.09,0.16 0.08,0.15 0.08,0.16 0.07,0.17 0.06,0.16 0.06,0.17 0.05,0.17 0.04,0.17 0.04,0.18 0.03,0.17 0.02,0.18 0.01,0.18 v 0.18 c 0,1.6 -1.05,2.67 -2.53,2.67 l -0.06,-0.25 c 0.99,0 1.72,-0.78 1.72,-2.11 0,-0.99 -0.51,-3.31 -2.18,-4.25 -0.05,0.35 -0.15,1.07 -0.88,1.07 v -0.21 c 0.42,0 0.61,-0.24 0.61,-0.85 0,-0.15 -0.01,-0.16 -0.11,-0.2 -0.26,-0.11 -0.56,-0.17 -0.83,-0.17 v 0 c -0.14,0 -0.46,0 -0.46,0.42 0,0.4 0.38,0.8 0.79,0.8 v 0.21 c -0.52,0 -1.01,-0.49 -1.01,-1.01 0,-0.2 0.06,-0.31 0.06,-0.32 v 0 c -0.78,0.31 -1.12,1.09 -1.12,1.98 0,0.69 0.26,2.1 1.02,3.17 0.73,1.01 1.66,1.47 2.39,1.47 l 0.06,0.25 c -2.15,0 -4.34,-2.26 -4.34,-4.57 0,-1.65 1.11,-2.65 2.55,-2.65 0.24,0 0.58,0.04 0.97,0.15 -0.04,-0.62 -0.04,-0.64 -0.04,-0.77 0,-0.32 0,-1.09 0.83,-1.09 1.18,0 1.66,1.82 1.66,1.92 0,0.07 -0.07,0.1 -0.11,0.1 -0.08,0 -0.1,-0.04 -0.12,-0.1 -0.24,-0.71 -0.82,-0.96 -1.16,-0.96 -0.46,0 -0.61,0.27 -0.71,1.03 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9078" /></g>    </g>
+    <g
+       inkscape:label="input"
+       id="g9094">
+      <g
+         inkscape:label="input"
+         id="g9086">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 70,315 H 60"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="input"
+           id="path9084" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9092"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" \\NOT{S}"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-94.44861,673.339464)"><line
+           style="stroke-width:0.3980000019"
+           x1="223.4299926758"
+           y1="485.4400024414"
+           x2="230.1199951172"
+           y2="485.4400024414"
+           id="line9088" /><path
+           inkscape:connector-curvature="0"
+           d="m 229.85,484.14 v 0 0.01 0 0 0.01 0 0 l -0.01,0.01 v 0 0.01 0 0 0.01 h -0.01 v 0.01 0 h -0.01 v 0.01 0 h -0.01 v 0.01 h -0.01 v 0 l -0.01,0.01 v 0 0 h -0.01 v 0 0 h -0.01 v 0 0.01 h -0.01 v 0 0 h -0.01 v 0 h -0.01 v 0 c -0.05,0 -0.06,-0.01 -0.18,-0.15 l -0.48,-0.57 c -0.26,0.47 -0.77,0.72 -1.42,0.72 -1.26,0 -2.46,-1.14 -2.46,-2.35 0,-0.8 0.53,-1.26 1.04,-1.41 l 1.06,-0.28 c 0.37,-0.08 0.92,-0.23 0.92,-1.05 0,-0.89 -0.82,-1.83 -1.79,-1.83 -0.64,0 -1.74,0.22 -1.74,1.45 0,0.24 0.05,0.48 0.05,0.54 0.02,0.04 0.02,0.05 0.02,0.07 0,0.1 -0.06,0.11 -0.11,0.11 -0.05,0 -0.07,-0.01 -0.1,-0.04 -0.04,-0.04 -0.6,-2.3 -0.6,-2.33 0,-0.06 0.05,-0.1 0.11,-0.1 0.05,0 0.06,0.01 0.18,0.15 l 0.49,0.56 c 0.42,-0.57 1.1,-0.71 1.68,-0.71 1.35,0 2.52,1.32 2.52,2.55 0,0.69 -0.33,1.02 -0.48,1.16 -0.23,0.23 -0.38,0.27 -1.27,0.5 -0.22,0.06 -0.57,0.16 -0.66,0.18 -0.27,0.09 -0.61,0.38 -0.61,0.9 0,0.81 0.8,1.65 1.74,1.65 0.83,0 1.43,-0.43 1.43,-1.54 0,-0.32 -0.04,-0.5 -0.04,-0.56 0,-0.01 0,-0.09 0.12,-0.09 0.1,0 0.11,0.03 0.15,0.19 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9090" /></g>    </g>
+    <g
+       inkscape:label="input"
+       id="g9106">
+      <g
+         inkscape:label="input"
+         id="g9098">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 70,345 H 60"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="input"
+           id="path9096" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9104"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" \\NOT{R}"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-94.366598,703.257452)"><line
+           style="stroke-width:0.3980000019"
+           x1="223.4299926758"
+           y1="485.4400024414"
+           x2="231.0700073242"
+           y2="485.4400024414"
+           id="line9100" /><path
+           inkscape:connector-curvature="0"
+           d="m 228.6,480.61 0.09,0.02 0.1,0.03 0.09,0.03 0.1,0.03 0.09,0.03 0.1,0.03 0.1,0.04 0.09,0.04 0.1,0.05 0.09,0.04 0.09,0.05 0.09,0.05 0.09,0.05 0.08,0.06 0.09,0.06 0.08,0.06 0.07,0.06 0.08,0.06 0.07,0.07 0.07,0.07 0.06,0.07 0.06,0.07 0.05,0.08 0.05,0.08 0.05,0.08 0.04,0.08 0.03,0.08 0.03,0.09 0.02,0.09 0.02,0.09 0.01,0.09 v 0.09 c 0,0.85 -0.89,1.49 -2.19,1.49 h -2.84 c -0.2,0 -0.29,0 -0.29,-0.2 0,-0.11 0.09,-0.11 0.28,-0.11 0.02,0 0.21,0 0.38,-0.02 0.18,-0.02 0.27,-0.03 0.27,-0.16 0,-0.04 -0.01,-0.07 -0.04,-0.19 l -1.34,-5.33 c -0.1,-0.39 -0.11,-0.47 -0.9,-0.47 -0.18,0 -0.27,0 -0.27,-0.2 0,-0.11 0.12,-0.11 0.14,-0.11 0.28,0 0.97,0.04 1.25,0.04 0.28,0 0.99,-0.04 1.27,-0.04 0.08,0 0.2,0 0.2,0.2 0,0.11 -0.09,0.11 -0.28,0.11 -0.37,0 -0.65,0 -0.65,0.18 0,0.06 0.02,0.11 0.03,0.17 l 0.66,2.63 h 1.18 l -0.01,0.22 h -1.11 l 0.64,2.59 c 0.06,0.24 0.09,0.34 0.28,0.37 0.09,0.01 0.41,0.01 0.61,0.01 0.71,0 1.81,0 1.81,-0.98 0,-0.34 -0.16,-1.03 -0.55,-1.41 -0.26,-0.26 -0.78,-0.58 -1.68,-0.58 l 0.01,-0.22 c 0.91,0 1.09,-0.55 1.09,-0.9 0,-0.15 -0.08,-0.46 -0.14,-0.69 -0.07,-0.27 -0.16,-0.64 -0.16,-0.84 0,-1.07 1.19,-1.07 1.32,-1.07 0.85,0 1.19,1 1.19,1.14 0,0.12 -0.11,0.12 -0.12,0.12 -0.08,0 -0.11,-0.07 -0.12,-0.14 -0.25,-0.74 -0.68,-0.91 -0.91,-0.91 -0.33,0 -0.4,0.22 -0.4,0.61 0,0.31 0.06,0.82 0.1,1.13 0.02,0.14 0.04,0.33 0.04,0.47 0,0.76 -0.67,1.07 -0.93,1.17 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9102" /></g>    </g>
+  </g>
+  <g
+     id="g9248"
+     inkscape:label="Latch"
+     transform="translate(0,22.51965332031)">
+    <rect
+       id="rect9214"
+       inkscape:label="rectangle"
+       y="310"
+       x="70"
+       width="40"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       ry="None"
+       rx="None"
+       height="40" />
+    <g
+       id="g9224"
+       inkscape:label="Q">
+      <g
+         id="g9218"
+         transform="rotate(-180,110,320)"
+         inkscape:label="Q">
+        <path
+           id="path9216"
+           inkscape:label="Q"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 110,320 H 100"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-64.491331,677.702009)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" Q"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9222"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path9220"
+           style="fill:#000000;stroke-width:0"
+           d="m 228.59,477.3 0.11,0.06 0.1,0.05 0.11,0.06 0.1,0.07 0.1,0.06 0.1,0.08 0.09,0.07 0.1,0.08 0.09,0.08 0.08,0.09 0.09,0.09 0.08,0.09 0.08,0.1 0.07,0.1 0.08,0.1 0.07,0.11 0.06,0.11 0.06,0.11 0.06,0.11 0.06,0.12 0.05,0.12 0.04,0.12 0.05,0.12 0.03,0.13 0.04,0.13 0.03,0.13 0.03,0.13 0.02,0.13 0.01,0.14 0.02,0.13 v 0.14 0.14 c 0,2.03 -1.5,3.64 -3.31,3.64 v -0.25 c 0.97,0 2.32,-0.85 2.32,-3.39 0,-0.77 -0.12,-2.17 -1.17,-2.95 -0.22,0.56 -0.54,1.05 -1.13,1.05 v -0.21 c 0.54,0 0.76,-0.42 0.87,-1 v 0 c -0.34,-0.19 -0.66,-0.22 -0.88,-0.22 -0.51,0 -0.59,0.45 -0.59,0.6 0,0.29 0.21,0.62 0.6,0.62 v 0.21 c -0.51,0 -0.81,-0.42 -0.81,-0.83 0,-0.27 0.13,-0.46 0.14,-0.48 v 0 c -0.54,0.2 -1.66,0.93 -1.66,3.21 0,2.58 1.4,3.39 2.31,3.39 v 0.25 c -1.78,0 -3.3,-1.59 -3.3,-3.64 0,-2 1.5,-3.58 3.31,-3.58 0.31,0 0.66,0.06 0.95,0.15 0.15,-0.95 0.29,-1.86 1.21,-1.86 1.02,0 1.2,1.32 1.2,1.83 0,0.09 0,0.2 -0.1,0.2 -0.09,0 -0.1,-0.07 -0.11,-0.17 -0.06,-0.54 -0.48,-0.84 -0.91,-0.84 -0.47,0 -0.72,0.34 -0.95,0.97 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g9236"
+       inkscape:label="notQ">
+      <g
+         id="g9228"
+         transform="rotate(-180,110,340)"
+         inkscape:label="notQ">
+        <path
+           id="path9226"
+           inkscape:label="notQ"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 110,340 H 100"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-64.588254,697.702009)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" \\NOT{Q}"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9234"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><line
+           id="line9230"
+           y2="485.4400024414"
+           x2="231.3099975586"
+           y1="485.4400024414"
+           x1="223.4299926758"
+           style="stroke-width:0.3980000019" /><path
+           id="path9232"
+           style="fill:#000000;stroke-width:0"
+           d="m 227.79,477.3 0.14,0.05 0.15,0.07 0.14,0.07 0.14,0.08 0.14,0.08 0.14,0.09 0.14,0.1 0.13,0.1 0.13,0.11 0.13,0.11 0.13,0.12 0.12,0.12 0.12,0.13 0.11,0.13 0.11,0.13 0.11,0.14 0.1,0.14 0.1,0.15 0.09,0.15 0.09,0.16 0.08,0.15 0.08,0.16 0.07,0.17 0.06,0.16 0.06,0.17 0.05,0.17 0.04,0.17 0.04,0.18 0.03,0.17 0.02,0.18 0.01,0.18 v 0.18 c 0,1.6 -1.05,2.67 -2.53,2.67 l -0.06,-0.25 c 0.99,0 1.72,-0.78 1.72,-2.11 0,-0.99 -0.51,-3.31 -2.18,-4.25 -0.05,0.35 -0.15,1.07 -0.88,1.07 v -0.21 c 0.42,0 0.61,-0.24 0.61,-0.85 0,-0.15 -0.01,-0.16 -0.11,-0.2 -0.26,-0.11 -0.56,-0.17 -0.83,-0.17 v 0 c -0.14,0 -0.46,0 -0.46,0.42 0,0.4 0.38,0.8 0.79,0.8 v 0.21 c -0.52,0 -1.01,-0.49 -1.01,-1.01 0,-0.2 0.06,-0.31 0.06,-0.32 v 0 c -0.78,0.31 -1.12,1.09 -1.12,1.98 0,0.69 0.26,2.1 1.02,3.17 0.73,1.01 1.66,1.47 2.39,1.47 l 0.06,0.25 c -2.15,0 -4.34,-2.26 -4.34,-4.57 0,-1.65 1.11,-2.65 2.55,-2.65 0.24,0 0.58,0.04 0.97,0.15 -0.04,-0.62 -0.04,-0.64 -0.04,-0.77 0,-0.32 0,-1.09 0.83,-1.09 1.18,0 1.66,1.82 1.66,1.92 0,0.07 -0.07,0.1 -0.11,0.1 -0.08,0 -0.1,-0.04 -0.12,-0.1 -0.24,-0.71 -0.82,-0.96 -1.16,-0.96 -0.46,0 -0.61,0.27 -0.71,1.03 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g9246"
+       inkscape:label="input">
+      <g
+         id="g9240"
+         inkscape:label="input">
+        <path
+           id="path9238"
+           inkscape:label="input"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 70,320 H 60"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-94.321864,678.335736)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" D"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9244"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path9242"
+           style="fill:#000000;stroke-width:0"
+           d="m 223.78,484.02 v -0.31 h 0.24 c 0.77,0 0.78,-0.11 0.78,-0.47 v -5.23 c 0,-0.36 -0.01,-0.47 -0.78,-0.47 h -0.24 v -0.31 h 3.64 l -0.27,0.31 h -1 c -0.47,0 -0.49,0.07 -0.49,0.4 v 5.38 c 0,0.32 0.02,0.39 0.49,0.39 h 0.99 c 0.62,0 1.31,-0.22 1.81,-0.92 0.43,-0.59 0.52,-1.44 0.52,-2.22 0,-1.1 -0.19,-1.7 -0.55,-2.18 -0.19,-0.27 -0.76,-0.85 -1.77,-0.85 l 0.27,-0.31 c 1.67,0 3.05,1.47 3.05,3.34 0,1.89 -1.35,3.45 -3.05,3.45 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+  </g>
+  <g
+     transform="translate(80,22.51965332031)"
+     inkscape:label="Latch"
+     id="g9424">
+    <rect
+       height="40"
+       rx="None"
+       ry="None"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       width="40"
+       x="70"
+       y="310"
+       inkscape:label="rectangle"
+       id="rect9390" />
+    <g
+       inkscape:label="Q"
+       id="g9400">
+      <g
+         inkscape:label="Q"
+         transform="rotate(-180,110,320)"
+         id="g9394">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 110,320 H 100"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="Q"
+           id="path9392" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9398"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" Q"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-64.491331,677.702009)"><path
+           inkscape:connector-curvature="0"
+           d="m 228.59,477.3 0.11,0.06 0.1,0.05 0.11,0.06 0.1,0.07 0.1,0.06 0.1,0.08 0.09,0.07 0.1,0.08 0.09,0.08 0.08,0.09 0.09,0.09 0.08,0.09 0.08,0.1 0.07,0.1 0.08,0.1 0.07,0.11 0.06,0.11 0.06,0.11 0.06,0.11 0.06,0.12 0.05,0.12 0.04,0.12 0.05,0.12 0.03,0.13 0.04,0.13 0.03,0.13 0.03,0.13 0.02,0.13 0.01,0.14 0.02,0.13 v 0.14 0.14 c 0,2.03 -1.5,3.64 -3.31,3.64 v -0.25 c 0.97,0 2.32,-0.85 2.32,-3.39 0,-0.77 -0.12,-2.17 -1.17,-2.95 -0.22,0.56 -0.54,1.05 -1.13,1.05 v -0.21 c 0.54,0 0.76,-0.42 0.87,-1 v 0 c -0.34,-0.19 -0.66,-0.22 -0.88,-0.22 -0.51,0 -0.59,0.45 -0.59,0.6 0,0.29 0.21,0.62 0.6,0.62 v 0.21 c -0.51,0 -0.81,-0.42 -0.81,-0.83 0,-0.27 0.13,-0.46 0.14,-0.48 v 0 c -0.54,0.2 -1.66,0.93 -1.66,3.21 0,2.58 1.4,3.39 2.31,3.39 v 0.25 c -1.78,0 -3.3,-1.59 -3.3,-3.64 0,-2 1.5,-3.58 3.31,-3.58 0.31,0 0.66,0.06 0.95,0.15 0.15,-0.95 0.29,-1.86 1.21,-1.86 1.02,0 1.2,1.32 1.2,1.83 0,0.09 0,0.2 -0.1,0.2 -0.09,0 -0.1,-0.07 -0.11,-0.17 -0.06,-0.54 -0.48,-0.84 -0.91,-0.84 -0.47,0 -0.72,0.34 -0.95,0.97 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9396" /></g>    </g>
+    <g
+       inkscape:label="notQ"
+       id="g9412">
+      <g
+         inkscape:label="notQ"
+         transform="rotate(-180,110,340)"
+         id="g9404">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 110,340 H 100"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="notQ"
+           id="path9402" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9410"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" \\NOT{Q}"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-64.588254,697.702009)"><line
+           style="stroke-width:0.3980000019"
+           x1="223.4299926758"
+           y1="485.4400024414"
+           x2="231.3099975586"
+           y2="485.4400024414"
+           id="line9406" /><path
+           inkscape:connector-curvature="0"
+           d="m 227.79,477.3 0.14,0.05 0.15,0.07 0.14,0.07 0.14,0.08 0.14,0.08 0.14,0.09 0.14,0.1 0.13,0.1 0.13,0.11 0.13,0.11 0.13,0.12 0.12,0.12 0.12,0.13 0.11,0.13 0.11,0.13 0.11,0.14 0.1,0.14 0.1,0.15 0.09,0.15 0.09,0.16 0.08,0.15 0.08,0.16 0.07,0.17 0.06,0.16 0.06,0.17 0.05,0.17 0.04,0.17 0.04,0.18 0.03,0.17 0.02,0.18 0.01,0.18 v 0.18 c 0,1.6 -1.05,2.67 -2.53,2.67 l -0.06,-0.25 c 0.99,0 1.72,-0.78 1.72,-2.11 0,-0.99 -0.51,-3.31 -2.18,-4.25 -0.05,0.35 -0.15,1.07 -0.88,1.07 v -0.21 c 0.42,0 0.61,-0.24 0.61,-0.85 0,-0.15 -0.01,-0.16 -0.11,-0.2 -0.26,-0.11 -0.56,-0.17 -0.83,-0.17 v 0 c -0.14,0 -0.46,0 -0.46,0.42 0,0.4 0.38,0.8 0.79,0.8 v 0.21 c -0.52,0 -1.01,-0.49 -1.01,-1.01 0,-0.2 0.06,-0.31 0.06,-0.32 v 0 c -0.78,0.31 -1.12,1.09 -1.12,1.98 0,0.69 0.26,2.1 1.02,3.17 0.73,1.01 1.66,1.47 2.39,1.47 l 0.06,0.25 c -2.15,0 -4.34,-2.26 -4.34,-4.57 0,-1.65 1.11,-2.65 2.55,-2.65 0.24,0 0.58,0.04 0.97,0.15 -0.04,-0.62 -0.04,-0.64 -0.04,-0.77 0,-0.32 0,-1.09 0.83,-1.09 1.18,0 1.66,1.82 1.66,1.92 0,0.07 -0.07,0.1 -0.11,0.1 -0.08,0 -0.1,-0.04 -0.12,-0.1 -0.24,-0.71 -0.82,-0.96 -1.16,-0.96 -0.46,0 -0.61,0.27 -0.71,1.03 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9408" /></g>    </g>
+    <g
+       inkscape:label="input"
+       id="g9422">
+      <g
+         inkscape:label="input"
+         id="g9416">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 70,320 H 60"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           inkscape:label="input"
+           id="path9414" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="g9420"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text=" T"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         transform="matrix(0.745562,0,0,-0.745562,-94.32932,678.313369)"><path
+           inkscape:connector-curvature="0"
+           d="m 230.06,483.96 h -6.08 l -0.19,-2.23 h 0.25 c 0.14,1.59 0.29,1.92 1.79,1.92 0.18,0 0.44,0 0.54,-0.02 0.21,-0.04 0.21,-0.15 0.21,-0.37 v -5.24 c 0,-0.34 0,-0.48 -1.05,-0.48 h -0.4 v -0.31 c 0.41,0.04 1.43,0.04 1.88,0.04 0.46,0 1.49,0 1.89,-0.04 v 0.31 h -0.39 c -1.05,0 -1.05,0.14 -1.05,0.48 v 5.24 c 0,0.19 0,0.33 0.18,0.37 0.11,0.02 0.38,0.02 0.57,0.02 1.5,0 1.65,-0.33 1.79,-1.92 h 0.25 z"
+           style="fill:#000000;stroke-width:0"
+           id="path9418" /></g>    </g>
+  </g>
+  <g
+     id="g9646"
+     inkscape:label="Latch"
+     transform="translate(125,-52.48034667969)">
+    <rect
+       id="rect9602"
+       inkscape:label="rectangle"
+       y="305"
+       x="70"
+       width="40"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       ry="None"
+       rx="None"
+       height="50" />
+    <g
+       id="g9612"
+       inkscape:label="Q">
+      <g
+         id="g9606"
+         transform="rotate(-180,110,315)"
+         inkscape:label="Q">
+        <path
+           id="path9604"
+           inkscape:label="Q"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 110,315 H 100"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-64.491331,672.702009)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" Q"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9610"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path9608"
+           style="fill:#000000;stroke-width:0"
+           d="m 228.59,477.3 0.11,0.06 0.1,0.05 0.11,0.06 0.1,0.07 0.1,0.06 0.1,0.08 0.09,0.07 0.1,0.08 0.09,0.08 0.08,0.09 0.09,0.09 0.08,0.09 0.08,0.1 0.07,0.1 0.08,0.1 0.07,0.11 0.06,0.11 0.06,0.11 0.06,0.11 0.06,0.12 0.05,0.12 0.04,0.12 0.05,0.12 0.03,0.13 0.04,0.13 0.03,0.13 0.03,0.13 0.02,0.13 0.01,0.14 0.02,0.13 v 0.14 0.14 c 0,2.03 -1.5,3.64 -3.31,3.64 v -0.25 c 0.97,0 2.32,-0.85 2.32,-3.39 0,-0.77 -0.12,-2.17 -1.17,-2.95 -0.22,0.56 -0.54,1.05 -1.13,1.05 v -0.21 c 0.54,0 0.76,-0.42 0.87,-1 v 0 c -0.34,-0.19 -0.66,-0.22 -0.88,-0.22 -0.51,0 -0.59,0.45 -0.59,0.6 0,0.29 0.21,0.62 0.6,0.62 v 0.21 c -0.51,0 -0.81,-0.42 -0.81,-0.83 0,-0.27 0.13,-0.46 0.14,-0.48 v 0 c -0.54,0.2 -1.66,0.93 -1.66,3.21 0,2.58 1.4,3.39 2.31,3.39 v 0.25 c -1.78,0 -3.3,-1.59 -3.3,-3.64 0,-2 1.5,-3.58 3.31,-3.58 0.31,0 0.66,0.06 0.95,0.15 0.15,-0.95 0.29,-1.86 1.21,-1.86 1.02,0 1.2,1.32 1.2,1.83 0,0.09 0,0.2 -0.1,0.2 -0.09,0 -0.1,-0.07 -0.11,-0.17 -0.06,-0.54 -0.48,-0.84 -0.91,-0.84 -0.47,0 -0.72,0.34 -0.95,0.97 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g9624"
+       inkscape:label="notQ">
+      <g
+         id="g9616"
+         transform="rotate(-180,110,345)"
+         inkscape:label="notQ">
+        <path
+           id="path9614"
+           inkscape:label="notQ"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 110,345 H 100"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-64.588254,702.702009)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" \\NOT{Q}"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9622"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><line
+           id="line9618"
+           y2="485.4400024414"
+           x2="231.3099975586"
+           y1="485.4400024414"
+           x1="223.4299926758"
+           style="stroke-width:0.3980000019" /><path
+           id="path9620"
+           style="fill:#000000;stroke-width:0"
+           d="m 227.79,477.3 0.14,0.05 0.15,0.07 0.14,0.07 0.14,0.08 0.14,0.08 0.14,0.09 0.14,0.1 0.13,0.1 0.13,0.11 0.13,0.11 0.13,0.12 0.12,0.12 0.12,0.13 0.11,0.13 0.11,0.13 0.11,0.14 0.1,0.14 0.1,0.15 0.09,0.15 0.09,0.16 0.08,0.15 0.08,0.16 0.07,0.17 0.06,0.16 0.06,0.17 0.05,0.17 0.04,0.17 0.04,0.18 0.03,0.17 0.02,0.18 0.01,0.18 v 0.18 c 0,1.6 -1.05,2.67 -2.53,2.67 l -0.06,-0.25 c 0.99,0 1.72,-0.78 1.72,-2.11 0,-0.99 -0.51,-3.31 -2.18,-4.25 -0.05,0.35 -0.15,1.07 -0.88,1.07 v -0.21 c 0.42,0 0.61,-0.24 0.61,-0.85 0,-0.15 -0.01,-0.16 -0.11,-0.2 -0.26,-0.11 -0.56,-0.17 -0.83,-0.17 v 0 c -0.14,0 -0.46,0 -0.46,0.42 0,0.4 0.38,0.8 0.79,0.8 v 0.21 c -0.52,0 -1.01,-0.49 -1.01,-1.01 0,-0.2 0.06,-0.31 0.06,-0.32 v 0 c -0.78,0.31 -1.12,1.09 -1.12,1.98 0,0.69 0.26,2.1 1.02,3.17 0.73,1.01 1.66,1.47 2.39,1.47 l 0.06,0.25 c -2.15,0 -4.34,-2.26 -4.34,-4.57 0,-1.65 1.11,-2.65 2.55,-2.65 0.24,0 0.58,0.04 0.97,0.15 -0.04,-0.62 -0.04,-0.64 -0.04,-0.77 0,-0.32 0,-1.09 0.83,-1.09 1.18,0 1.66,1.82 1.66,1.92 0,0.07 -0.07,0.1 -0.11,0.1 -0.08,0 -0.1,-0.04 -0.12,-0.1 -0.24,-0.71 -0.82,-0.96 -1.16,-0.96 -0.46,0 -0.61,0.27 -0.71,1.03 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g9634"
+       inkscape:label="input">
+      <g
+         id="g9628"
+         inkscape:label="input">
+        <path
+           id="path9626"
+           inkscape:label="input"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 70,315 H 60"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-94.366598,673.257452)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" J"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9632"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path9630"
+           style="fill:#000000;stroke-width:0"
+           d="m 226.44,478.7 v -0.08 l -0.01,-0.08 -0.01,-0.08 -0.01,-0.08 -0.01,-0.08 -0.01,-0.07 -0.02,-0.07 -0.02,-0.07 -0.02,-0.07 -0.02,-0.06 -0.03,-0.06 -0.03,-0.06 -0.03,-0.06 -0.03,-0.05 -0.03,-0.05 -0.04,-0.05 -0.03,-0.05 -0.04,-0.04 -0.04,-0.04 -0.04,-0.04 -0.04,-0.04 -0.05,-0.03 -0.04,-0.03 -0.05,-0.02 -0.04,-0.03 -0.05,-0.02 -0.04,-0.02 -0.05,-0.01 -0.05,-0.01 -0.05,-0.01 h -0.05 l -0.05,-0.01 c -0.06,0 -0.73,0 -1.09,0.58 0.52,0 0.63,0.3 0.63,0.56 0,0.36 -0.27,0.55 -0.55,0.55 -0.22,0 -0.56,-0.13 -0.56,-0.57 0,-0.74 0.71,-1.33 1.59,-1.33 1.02,0 1.74,0.69 1.85,1.44 0.01,0.08 0.01,0.1 0.01,0.43 v 4.41 c 0,0.41 0.14,0.41 0.77,0.41 v 0.31 c -0.44,-0.02 -0.82,-0.03 -1.29,-0.03 -0.41,0 -1.29,0 -1.67,0.03 v -0.31 h 0.36 c 0.98,0 0.98,-0.13 0.98,-0.48 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+    <g
+       id="g9644"
+       inkscape:label="input">
+      <g
+         id="g9638"
+         inkscape:label="input">
+        <path
+           id="path9636"
+           inkscape:label="input"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           d="M 70,345 H 60"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(0.745562,0,0,-0.745562,-94.306953,703.335736)"
+         ns0:preamble="/home/fernando/.config/inkscape/extensions/textextLib/CircuitSymbolsLatexPreamble.tex"
+         ns0:text=" K"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         id="g9642"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.4329996109;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path9640"
+           style="fill:#000000;stroke-width:0"
+           d="m 227.41,481.4 1.79,1.72 c 0.08,0.08 0.61,0.58 1.42,0.59 v 0.31 c -0.26,-0.03 -0.58,-0.03 -0.85,-0.03 -0.36,0 -0.93,0 -1.26,0.03 v -0.31 c 0.39,-0.01 0.45,-0.24 0.45,-0.33 0,-0.15 -0.1,-0.25 -0.17,-0.32 l -3.12,-2.97 v 3.15 c 0,0.36 0.02,0.47 0.79,0.47 h 0.24 v 0.31 c -0.35,-0.03 -1.09,-0.03 -1.47,-0.03 -0.38,0 -1.12,0 -1.47,0.03 v -0.31 H 224 c 0.76,0 0.79,-0.11 0.79,-0.47 v -5.23 c 0,-0.36 -0.03,-0.47 -0.79,-0.47 h -0.24 v -0.31 c 0.35,0.04 1.09,0.04 1.46,0.04 0.38,0 1.13,0 1.48,-0.04 v 0.31 h -0.24 c -0.77,0 -0.79,0.11 -0.79,0.47 v 1.74 l 1.15,1.09 1.81,-2.66 c 0.05,-0.09 0.14,-0.22 0.14,-0.34 0,-0.3 -0.38,-0.3 -0.58,-0.3 v -0.31 c 0.35,0.04 1.04,0.04 1.42,0.04 0.35,0 0.73,-0.01 1.15,-0.04 v 0.31 c -0.54,0 -0.75,0.04 -1.05,0.48 z"
+           inkscape:connector-curvature="0" /></g>    </g>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.6666665077px;line-height:20px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="55"
+     y="247.5196533203"
+     id="text9761"><tspan
+       sodipodi:role="line"
+       id="tspan9759"
+       x="55"
+       y="247.5196533203">SR positive (NOR)</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.6666665077px;line-height:20px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="135"
+     y="247.5196533203"
+     id="text9761-3"><tspan
+       sodipodi:role="line"
+       id="tspan9759-6"
+       x="135"
+       y="247.5196533203">SR negative (NAND)</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.6666665077px;line-height:20px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="215"
+     y="247.5196533203"
+     id="text9761-3-7"><tspan
+       sodipodi:role="line"
+       id="tspan9759-6-5"
+       x="215"
+       y="247.5196533203">JK</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.6666665077px;line-height:20px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="90"
+     y="327.5196533203"
+     id="text9761-3-7-3"><tspan
+       sodipodi:role="line"
+       id="tspan9759-6-5-5"
+       x="90"
+       y="327.5196533203">D</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.6666665077px;line-height:20px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="170"
+     y="327.5196533203"
+     id="text9761-3-7-6"><tspan
+       sodipodi:role="line"
+       id="tspan9759-6-5-2"
+       x="170"
+       y="327.5196533203">T</tspan></text>
+</svg>

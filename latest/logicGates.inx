@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Logic Gates</name>
+    <id>fsmMLK.logicGates</id>
+    <dependency type="executable" location="inx">logicGates.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Base.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Draw.py</dependency>
+    <param name="tab" type="notebook">
+        <page name="Gates" appearance="minimal" gui-text="Logic gates">
+            <label appearance="header">Gate selection</label>
+            <hbox>
+                <vbox>
+                    <param name="ANDgate" type="bool" gui-text="AND">true</param>
+                    <param name="NANDgate" type="bool" gui-text="NAND">false</param>
+                </vbox>
+                <separator/>
+                <vbox>
+                    <param name="ORgate" type="bool" gui-text="OR">false</param>
+                    <param name="NORgate" type="bool" gui-text="NOR">false</param>
+                </vbox>
+                <separator/>
+                <vbox>
+                    <param name="XORgate" type="bool" gui-text="XOR">false</param>
+                    <param name="XNORgate" type="bool" gui-text="XNOR">false</param>
+                </vbox>
+                <separator/>
+                <vbox>
+                    <param name="BUFgate" type="bool" gui-text="BUFFER">false</param>
+                    <param name="NOTgate" type="bool" gui-text="NOT">false</param>
+                </vbox>
+            </hbox>
+            <label appearance="header">Input configuration (no effect on NOT/BUFFER)</label>
+            <param name="nInput" type="int" min="2" max="6" gui-text="Number of inputs:">2</param>
+            <param name="InputTypes" type="string" gui-text="Input config (top to bottom):" gui-description="Fill this field with a sequence of 1 (regular) and 0 (inverted), one for each input, top to bottom.
+Ex: 100 [ 3 inputs: regular (top), inverted (middle), inverted (bottom) ]">1,1,0</param>
+        </page>
+        <page name="Latches" appearance="minimal" gui-text="Latch and F.F.">
+            <hbox>
+                <vbox>
+                    <param name="latchType" type="optiongroup" appearance="combo" gui-text="Type:">
+                        <option value="SRnor">SR postive (NOR)</option>
+                        <option value="SRnand">SR negative (NAND)</option>
+                        <option value="D">D</option>
+                        <option value="JK">JK</option>
+                        <option value="T">T</option>
+                    </param>
+                    <param name="latchSize" type="optiongroup" appearance="combo" gui-text="Symbol size:">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Small</option>
+                    </param>
+                    <param name="latchSuppressq" type="bool" gui-text="Suppress Q output">false</param>
+                    <param name="latchSuppressNOTq" type="bool" gui-text="Suppress NOT{Q} output">false</param>
+                </vbox>
+                <spacer/>
+                <separator/>
+                <spacer/>
+                <vbox>
+                    <label appearance="header">Control gate</label>
+                    <param name="latchGate" type="optiongroup" appearance="combo" gui-text="Type:">
+                        <option value="none">No control</option>
+                        <option value="level">Level (Latch)</option>
+                        <option value="edge">Edge (Flip-flop)</option>
+                    </param>
+                    <param name="latchGateLogic" type="optiongroup" appearance="combo" gui-text="Activation logic:">
+                        <option value="HIGH">High (or ⮥ edge)</option>
+                        <option value="LOW">Low (or ⮧ edge)</option>
+                    </param>
+                    <label appearance="header">Asynchronous inputs</label>
+                    <param name="latchPreset" type="optiongroup" appearance="combo" gui-text="Preset:">
+                        <option value="0">No preset</option>
+                        <option value="1">Active HIGH</option>
+                        <option value="-1">Active LOW</option>
+                    </param>
+                    <param name="latchClear" type="optiongroup" appearance="combo" gui-text="Clear:">
+                        <option value="0">No clear</option>
+                        <option value="1">Active HIGH</option>
+                        <option value="-1">Active LOW</option>
+                    </param>
+
+                </vbox>
+            </hbox>
+        </page>
+        <page name="SignalsAndExpressions" appearance="minimal" gui-text="Signals and Expressions">
+            <param name="subTab_sigExp" type="notebook">
+                <page name="signals" appearance="minimal" gui-text="Signals">
+                    <hbox>
+                        <vbox>
+                            <param name="signal" type="optiongroup" appearance="combo" gui-text="Signal type:">
+                                <option value="custom">Custom</option>
+                                <option value="GND">GND</option>
+                                <option value="common">Common</option>
+                                <option value="digital">Digital</option>
+                                <option value="CLK">CLK</option>
+                                <option value="EN">EN</option>
+                                <option value="CLKi">NOT{CLK}</option>
+                                <option value="ENi">NOT{EN}</option>
+                                <option value="+vcc">+Vcc</option>
+                                <option value="-vcc">-Vcc</option>
+                                <option value="+5V">+5V</option>
+                                <option value="-5V">-5V</option>
+                                <option value="+15V">+15V</option>
+                                <option value="-15V">-15V</option>
+                            </param>
+                            <param name="signalRot" type="optiongroup" appearance="combo" gui-text="Direction:">
+                                <option value="0">↓ North</option>
+                                <option value="90">→ West</option>
+                                <option value="-90">← East</option>
+                                <option value="180">↑ South</option>
+                            </param>
+                        </vbox>
+                        <spacer/>
+                        <separator/>
+                        <spacer/>
+                        <vbox>
+                            <param name="signalVal" type="string" gui-text="Custom label¹:" gui-description="Only affects 'Custom' and 'Digital' signals">A</param>
+                            <param name="signalDrawLine" type="bool" gui-text="Draw signal line">true</param>
+                        </vbox>
+                    </hbox>
+                </page>
+                <page name="expressions" appearance="minimal" gui-text="Expressions">
+                    <param name="boolExpression" type="string" appearance="multiline" gui-text="Boolean expression¹:">A \AND B</param>
+                    <label>predefined functions: \AND, \OR, \XOR, \XNOR, \NOT{...}</label>
+                </page>
+            </param>
+            <label>¹ LaTeX: texts will be in inline math mode. No $...$ is needed</label>
+        </page>
+        <page name="Help" gui-text="Help">
+            <label>For details please refer to</label>
+            <label appearance="url">https://github.com/fsmMLK/inkscapeLogicGates</label>
+        </page>
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="fsmMLK">
+                <submenu name="Circuit symbols"/>
+            </submenu>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">logicGates.py</command>
+    </script>
+</inkscape-extension>
