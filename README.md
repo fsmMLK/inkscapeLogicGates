@@ -1,5 +1,4 @@
 # logicGates
-This Inkscape extension to assist creating logic circuits symbols,
 
 This extension will assist you creating latches, flip-flops and logic gates following the 'distinctive shape' of IEEE Std 91/91a-1991 standard in [Inkscape](https://inkscape.org/).
 
@@ -181,18 +180,18 @@ This tab is presented in two subtabs, *Signals* and *Expressions*. The first cre
 
 **Signal type:** Allows the selection of one type of signal. You can select a few commonly used signals or select ``Custom`` to customize its label. (see below)
 
-<img src="docs/images/SignalTypes.png" width="800px"/>
+<img src="docs/images/SignalTypes.png" width="600px"/>  
 
 **Direction:** Direction of the signal line. This option is used only if ``Draw signal line`` option is enabled.
 
-<img src="docs/images/SignalDirection.png" width="400px"/>
+<img src="docs/images/SignalDirection.png" width="300px"/>
 
 **Custom label:** Label of the signal. This option is used only if ``Custom`` is selected in `Signal type`. If LaTeX support is enabled the text will be inserted in a mathematical environment $...$
 
 
 **Draw signal line:** signal line toggle.
 
-<img src="docs/images/SignalLines.png" width="200px"/>
+<img src="docs/images/SignalLines.png" width="150px"/>
 
 #### Expressions subtab
 
@@ -200,13 +199,13 @@ This tab is presented in two subtabs, *Signals* and *Expressions*. The first cre
 
 **Boolean expression:** Boolean expression area. Predefined commands were created for the basic boolean operators:
 
-<img src="docs/images/BooleanCommands.png" width="450px"/>
+<img src="docs/images/BooleanCommands.png" width="350px"/>
 
 > Note: The command ``\NOT`` has one argument and **MUST** be enclosed between ``{ }``
 
 Examples:
 
-<img src="docs/images/BooleanCommands_examples.png" width="800px"/>
+<img src="docs/images/BooleanCommands_examples.png" width="600px"/>
 
 
 # Observations
