@@ -214,12 +214,12 @@ Examples:
 
 # Examples
 
-<img src="docs/images/Example_minterms.png" width="600px"/>
+<img src="docs/images/Example_minterms.png" width="500px"/>
 
-<img src="docs/images/Example_circuit.png" width="800px"/>
+<img src="docs/images/Example_circuit.png" width="650px"/>
 
-<img src="docs/images/Example_shift_register_4bits.png" width="800px"/>
+<img src="docs/images/Example_shift_register_4bits.png" width="700px"/>
 
-<img src="docs/images/Example_Synchonous_counter_2N.png" width="800px"/>
+<img src="docs/images/Example_Synchonous_counter_2N.png" width="700px"/>
 
 
