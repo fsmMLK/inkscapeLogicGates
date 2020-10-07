@@ -52,9 +52,9 @@ Installation procedures for latest and older versions are described below.
 
     3. Download **logicGates** files and place them inside the directory you just created.
 
-       You don't have to copy all files from Github. The files you will need are `logicGates.py` and `logicGates.inx`. **You can find these files inside the ``latest`` folder**. In the end you must have the following files and directories in your Inkscape extension directory.
+       You don't have to copy all files from Github. The files you will need are `logicGates.py`, `logicGates.inx`, and `logicGatesPreamble.tex`. **You can find these files inside the ``latest`` folder**. In the end you must have the following files and directories in your Inkscape extension directory.
 
-       **LaTeX users:** the 
+       **LaTeX users:** the file `logicGatesPreamble.tex` contains the macros defined in this plugin. You can add your own macros to this file. You can also add macros to ``inkscapeMadeEasy/logicGatesPreamble.tex``. In this case the same macros will be accessible to all plugins that employ inkscapeMadeEasy.
        
         ```
            inkscape
@@ -69,7 +69,7 @@ Installation procedures for latest and older versions are described below.
                 ┃    ┋
                 ┃
                 ┣━━ logicGates            <-- logicGates folder
-                ┋    ┣━━ CircuitSymbolsLatexPreamble.tex
+                ┋    ┣━━ logicGatesPreamble.tex
                      ┣━━ logicGates.py
                      ┗━━ logicGates.inx
         
