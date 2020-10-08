@@ -54,24 +54,24 @@ Installation procedures for latest and older versions are described below.
 
        You don't have to copy all files from Github. The files you will need are `logicGates.py`, `logicGates.inx`, and `logicGatesPreamble.tex`. **You can find these files inside the ``latest`` folder**. In the end you must have the following files and directories in your Inkscape extension directory.
 
-       **LaTeX users:** the file `logicGatesPreamble.tex` contains the macros defined in this plugin. You can add your own macros to this file. You can also add macros to ``inkscapeMadeEasy/logicGatesPreamble.tex``. In this case the same macros will be accessible to all plugins that employ inkscapeMadeEasy.
+       **LaTeX users:** the file `logicGatesPreamble.tex` contains the macros defined in this plugin. You can add your own macros to this file. You can also add macros to ``inkscapeMadeEasy/logicGatesPreamble.tex``. In this case the same macros will be accessible by all plugins that employ inkscapeMadeEasy.
        
         ```
            inkscape
-            ┣━━extensions
-            ┋   ┣━━ inkscapeMadeEasy      <-- inkscapeMadeEasy folder
-                ┃    ┣━━ inkscapeMadeEasy_Base.py
-                ┃    ┣━━ inkscapeMadeEasy_Draw.py
-                ┃    ┣━━ inkscapeMadeEasy_Plot.py
-                ┃    ┗━━ basicLatexPackages.tex
-                ┃
-                ┣━━ textext               <-- texText folder (if you installed textText)
-                ┃    ┋
-                ┃
-                ┣━━ logicGates            <-- logicGates folder
-                ┋    ┣━━ logicGatesPreamble.tex
-                     ┣━━ logicGates.py
-                     ┗━━ logicGates.inx
+            ┣━━ extensions
+            ┋    ┣━━ inkscapeMadeEasy      <-- inkscapeMadeEasy folder
+                 ┃    ┣━━ inkscapeMadeEasy_Base.py
+                 ┃    ┣━━ inkscapeMadeEasy_Draw.py
+                 ┃    ┣━━ inkscapeMadeEasy_Plot.py
+                 ┃    ┗━━ basicLatexPackages.tex
+                 ┃
+                 ┣━━ textext               <-- texText folder (if you installed textText)
+                 ┃    ┋
+                 ┃
+                 ┣━━ logicGates            <-- logicGates folder
+                 ┋    ┣━━ logicGatesPreamble.tex
+                      ┣━━ logicGates.py
+                      ┗━━ logicGates.inx
         
         NOTE: You might have other sub folders inside the extensions directory. They don't interfere with the plugin.
         ```
@@ -92,20 +92,21 @@ Installation procedures for latest and older versions are described below.
 
         ```
         inkscape
-            ┣━━extensions
-            ┋   ┣━━ inkscapeMadeEasy_Base.py
-                ┣━━ inkscapeMadeEasy_Draw.py
-                ┣━━ inkscapeMadeEasy_Plot.py
-                ┣━━ textextLib
-                ┃   ┣━━ __init__.py
-                ┃   ┣━━ basicLatexPackages.tex
-                ┃   ┣━━ textext.inx
-                ┃   ┣━━ textext.py
-                ┃
-                ┣━━ logicGates.py            <-- from repository folder 0.9x!
-                ┣━━ logicGates.inx           <-- from repository folder 0.9x!
-                ┋
-        ```
+            ┣━━ extensions
+            ┋    ┣━━ inkscapeMadeEasy_Base.py
+                 ┣━━ inkscapeMadeEasy_Draw.py
+                 ┣━━ inkscapeMadeEasy_Plot.py
+                 ┣━━ textextLib
+                 ┃    ┣━━ __init__.py
+                 ┃    ┣━━ basicLatexPackages.tex
+                 ┃    ┣━━ CircuitSymbolsLatexPreamble.tex
+                 ┃    ┣━━ textext.inx
+                 ┃    ┗━━ textext.py
+                 ┃ 
+                 ┣━━ logicGates.py            <-- from repository folder 0.9x!
+                 ┣━━ logicGates.inx           <-- from repository folder 0.9x!
+                 ┋
+        ``` 
 
 # Usage
 
