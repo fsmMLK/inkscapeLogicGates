@@ -4,17 +4,17 @@ This extension will assist you creating latches, flip-flops and logic gates foll
 
 <img src="docs/images/Examples.png" width="900px"/>
 
-# Main features
+## Main features
 
-The main features are
+The main features of this extension are
 
  - You can use up to six inputs for each gate (except NOT and BUFFER gates)
  - Each input can be set to be inverted (negated) individually
  - Latch and flip-flop generator, with customizable optional control gates and asynchronous Preset and Clear.
  - Signal labeling generator with a few pre-defined commonly used signals
- - Boolean expression editor, with optional LaTeX support and pre defined logic operator functions.
+ - Boolean expression editor, with optional LaTeX support and predefined logic operator functions.
 
-# Current and older versions
+## Current and older versions
 
 Compatibility table
 
@@ -54,24 +54,24 @@ Installation procedures for latest and older versions are described below.
 
        You don't have to copy all files from Github. The files you will need are `logicGates.py`, `logicGates.inx`, and `logicGatesPreamble.tex`. **You can find these files inside the ``latest`` folder**. In the end you must have the following files and directories in your Inkscape extension directory.
 
-       **LaTeX users:** the file `logicGatesPreamble.tex` contains the macros defined in this plugin. You can add your own macros to this file. You can also add macros to ``inkscapeMadeEasy/logicGatesPreamble.tex``. In this case the same macros will be accessible by all plugins that employ inkscapeMadeEasy.
+       **LaTeX users:** the file `logicGatesPreamble.tex` contains the macros defined in this plugin. You can add your own macros to this file. You can also add macros to ``inkscapeMadeEasy/basicLatexPackages.tex``. In this case the same macros will be accessible by all plugins that employ inkscapeMadeEasy.
        
         ```
-           inkscape
-            ┣━━ extensions
-            ┋    ┣━━ inkscapeMadeEasy      <-- inkscapeMadeEasy folder
-                 ┃    ┣━━ inkscapeMadeEasy_Base.py
-                 ┃    ┣━━ inkscapeMadeEasy_Draw.py
-                 ┃    ┣━━ inkscapeMadeEasy_Plot.py
-                 ┃    ┗━━ basicLatexPackages.tex
-                 ┃
-                 ┣━━ textext               <-- texText folder (if you installed textText)
-                 ┃    ┋
-                 ┃
-                 ┣━━ logicGates            <-- logicGates folder
-                 ┋    ┣━━ logicGatesPreamble.tex
-                      ┣━━ logicGates.py
-                      ┗━━ logicGates.inx
+        inkscape
+         ┣━━ extensions
+         ┋    ┣━━ inkscapeMadeEasy      <-- inkscapeMadeEasy folder
+              ┃    ┣━━ inkscapeMadeEasy_Base.py
+              ┃    ┣━━ inkscapeMadeEasy_Draw.py
+              ┃    ┣━━ inkscapeMadeEasy_Plot.py
+              ┃    ┗━━ basicLatexPackages.tex
+              ┃
+              ┣━━ textext               <-- texText folder (if you installed textText)
+              ┃    ┋
+              ┃
+              ┣━━ logicGates            <-- logicGates folder
+              ┋    ┣━━ logicGatesPreamble.tex
+                   ┣━━ logicGates.py
+                   ┗━━ logicGates.inx
         
         NOTE: You might have other sub folders inside the extensions directory. They don't interfere with the plugin.
         ```
@@ -88,7 +88,7 @@ Installation procedures for latest and older versions are described below.
 
     2. Download **logicGates** files and place them inside the directory you just created.
 
-       You don't have to copy all files from Github. The files you will need are `logicGates.py` and `logicGates.inx`. **You can find these files inside the ``0.9x`` folder**. In the end you must have the following files and directories in your Inkscape extension directory.
+       You don't have to copy all files from Github. The files you will need are `logicGates.py`, `logicGates.inx`, and `CircuitSymbolsLatexPreamble.tex`. **You can find these files inside the ``0.9x`` folder**. In the end you must have the following files and directories in your Inkscape extension directory.
 
         ```
         inkscape
@@ -96,10 +96,11 @@ Installation procedures for latest and older versions are described below.
             ┋    ┣━━ inkscapeMadeEasy_Base.py
                  ┣━━ inkscapeMadeEasy_Draw.py
                  ┣━━ inkscapeMadeEasy_Plot.py
+                 ┃ 
                  ┣━━ textextLib
                  ┃    ┣━━ __init__.py
                  ┃    ┣━━ basicLatexPackages.tex
-                 ┃    ┣━━ CircuitSymbolsLatexPreamble.tex
+                 ┃    ┣━━ CircuitSymbolsLatexPreamble.tex     <-- from repository folder 0.9x!
                  ┃    ┣━━ textext.inx
                  ┃    ┗━━ textext.py
                  ┃ 
@@ -187,7 +188,7 @@ This tab is presented in two subtabs, *Signals* and *Expressions*. The first cre
 
 <img src="docs/images/SignalDirection.png" width="300px"/>
 
-**Custom label:** Label of the signal. This option is used only if ``Custom`` is selected in `Signal type`. If LaTeX support is enabled the text will be inserted in a mathematical environment $...$
+**Custom label:** Label of the signal. This option is used only if ``Custom`` or ``Digital`` is selected in `Signal type`. If LaTeX support is enabled the text will be inserted in a mathematical environment $...$
 
 
 **Draw signal line:** signal line toggle.
@@ -211,7 +212,7 @@ Examples:
 
 # Observations
 
- - The objects will be created at the center of your screen.
+ - The objects will be created in the center of your screen.
 
 # Examples
 
