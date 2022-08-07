@@ -4,6 +4,10 @@ This extension will assist you creating latches, flip-flops and logic gates foll
 
 <img src="docs/images/Examples.png" width="900px"/>
 
+
+**TIP:** If you want to create timing diagrams, please take a look at my newest project [wavedromScape](https://github.com/fsmMLK/wavedromScape)
+
+
 ## Main features
 
 The main features of this extension are

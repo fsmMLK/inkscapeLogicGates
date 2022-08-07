@@ -81,6 +81,14 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         self.textStyle = inkDraw.textStyle.setSimpleBlack(self.fontSize, justification='center')
         self.textStyleSmall = inkDraw.textStyle.setSimpleBlack(self.fontSizeSmall, justification='center')
 
+        # myLine = inkDraw.line.relCoords(root_layer, [[10,0]], position)
+        # self.addAttribute(myLine, attributeName='myLineInfo', attributeValue='my Data info = %f' %3.5, forceWrite=True)
+        # self.addAttribute(myLine, attributeName='myLineInfo', attributeValue='my Data info = %f' %4.5, forceWrite=False)
+        # self.addAttribute(myLine, attributeName='myLineInfo', attributeValue='my Data info = %f' %5.5, forceWrite=True)
+        # return
+
+        self.cleanDefs()
+
         # --------------------------
         # Gates
         # ---------------------------
@@ -743,4 +751,15 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 
 if __name__ == '__main__':
     logic = LogicGates()
-    logic.run()
+
+    debugMode = True
+
+    if debugMode:
+        tempFile='/home/fernando/lixo_defs.svg'
+        tempFile='/home/fernando/servidor/UFABC/02_DISCIPLINAS/000_simbolosEletricos_1.0.svg'
+
+        logic.run([r'--ANDgate=True', tempFile], output=os.devnull)
+        logic.document.write('/home/fernando/temp_debug_out.svg')
+
+    else:
+        sp.run()
