@@ -752,14 +752,13 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 if __name__ == '__main__':
     logic = LogicGates()
 
-    debugMode = True
+    debugMode = False
 
     if debugMode:
         tempFile='/home/fernando/lixo_defs.svg'
-        tempFile='/home/fernando/servidor/UFABC/02_DISCIPLINAS/000_simbolosEletricos_1.0.svg'
 
         logic.run([r'--ANDgate=True', tempFile], output=os.devnull)
         logic.document.write('/home/fernando/temp_debug_out.svg')
 
     else:
-        sp.run()
+        logic.run()
