@@ -127,6 +127,10 @@ This extension is presented in three tabs. The **Logic gates** and **Latch and F
 
 <img src="docs/images/Gates.png" width="500px"/>
 
+**Symbol size:** You can select between 2 sizes, presented below.
+
+<img src="docs/images/Gates_scale.png" width="450px"/>
+
 **Number of inputs:** Number of inputs of the gate. This parameter does not affect NOT and BUFFER gates. You can choose any number between 2 and 6.
 
 **Input config:** You can select whether the inputs must be inverted. This field accepts a sequence of values `1` or `0`. You can create a sequence of 1s and 0s without any spaces, with spaces or commas.

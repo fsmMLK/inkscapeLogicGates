@@ -29,6 +29,10 @@
                     <param name="NOTgate" type="bool" gui-text="NOT">false</param>
                 </vbox>
             </hbox>
+            <param name="symbolSize" type="optiongroup" appearance="combo" gui-text="Symbol size:">
+                <option value="large">Large</option>
+                <option value="small">Small</option>
+            </param>
             <label appearance="header">Input configuration (no effect on NOT/BUFFER)</label>
             <param name="nInput" type="int" min="2" max="6" gui-text="Number of inputs:">2</param>
             <param name="InputTypes" type="string" gui-text="Input config (top to bottom):" gui-description="Fill this field with a sequence of 1 (regular) and 0 (inverted), one for each input, top to bottom.

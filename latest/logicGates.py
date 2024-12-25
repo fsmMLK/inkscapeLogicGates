@@ -29,6 +29,8 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         self.arg_parser.add_argument("--NORgate", type=self.bool, dest="NORgate", default=False)
         self.arg_parser.add_argument("--XNORgate", type=self.bool, dest="XNORgate", default=False)
 
+        self.arg_parser.add_argument("--symbolSize", type=str, dest="symbolSize", default='small')
+
         self.arg_parser.add_argument("--nInput", type=int, dest="nInput", default=2)
         self.arg_parser.add_argument("--InputTypes", type=str, dest="InputTypes", default='11')
 
@@ -48,13 +50,6 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         self.arg_parser.add_argument("--signalDrawLine", type=self.bool, dest="signalDrawLine", default=True)
 
         self.arg_parser.add_argument("--boolExpression", type=str, dest="boolExpression", default='')
-
-        self.lineStyle = inkDraw.lineStyle.setSimpleBlack()
-        self.lineStyleBody = inkDraw.lineStyle.setSimpleBlack(1.8)
-
-        self.totalHeight = 30  # total height of the logic gate
-        self.totalWidth = 50  # total width of the logic gate, including in/output
-        self.lengthTerm = 10  # length of the terminals
 
     def effect(self):
 
@@ -81,11 +76,23 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         self.textStyle = inkDraw.textStyle.setSimpleBlack(self.fontSize, justification='center')
         self.textStyleSmall = inkDraw.textStyle.setSimpleBlack(self.fontSizeSmall, justification='center')
 
-        # myLine = inkDraw.line.relCoords(root_layer, [[10,0]], position)
-        # self.addAttribute(myLine, attributeName='myLineInfo', attributeValue='my Data info = %f' %3.5, forceWrite=True)
-        # self.addAttribute(myLine, attributeName='myLineInfo', attributeValue='my Data info = %f' %4.5, forceWrite=False)
-        # self.addAttribute(myLine, attributeName='myLineInfo', attributeValue='my Data info = %f' %5.5, forceWrite=True)
-        # return
+        if so.symbolSize.lower() == 'large':
+            self.totalHeight = 30  # total height of the logic gate
+            self.totalWidth = 50  # total width of the logic gate, including in/output
+            self.lengthTerm = 10  # length of the terminals
+            self.lineWidthBody = 1.8
+            self.NOTcircleRadius = 2
+
+        if so.symbolSize.lower() == 'small':
+            self.totalHeight = 20  # total height of the logic gate
+            self.totalWidth = 40  # total width of the logic gate, including in/output
+            self.lengthTerm = 10  # length of the terminals
+            self.lineWidthBody = 1.4
+            self.NOTcircleRadius = 1.5
+
+        self.lineWidth = 1.0
+        self.lineStyle = inkDraw.lineStyle.setSimpleBlack(self.lineWidth)
+        self.lineStyleBody = inkDraw.lineStyle.setSimpleBlack(self.lineWidthBody)
 
         self.cleanDefs()
 
@@ -223,8 +230,9 @@ class LogicGates(inkBase.inkscapeMadeEasy):
             inkDraw.line.relCoords(elem, [[-self.lengthTerm - extraLength, 0]], position, label, self.lineStyle)
 
         else:
-            inkDraw.line.absCoords(elem, [[-5.5, 0], [-self.lengthTerm - extraLength, 0]], position, label, self.lineStyle)
-            inkDraw.circle.centerRadius(elem, [-3, 0], 2, position, label, inkDraw.lineStyle.setSimpleBlack(1.2))
+            inkDraw.line.absCoords(elem, [[-(self.NOTcircleRadius*2+self.lineWidth/2+self.lineWidth*0.9), 0], [-self.lengthTerm - extraLength, 0]], position, label, self.lineStyle)
+            inkDraw.circle.centerRadius(elem, [-self.NOTcircleRadius - self.lineWidth, 0], self.NOTcircleRadius, position, label,
+                                        inkDraw.lineStyle.setSimpleBlack(self.lineWidthBody*0.7))
 
         if isClock:
             inkDraw.line.absCoords(elem, [[0, -4], [4, 0], [0, 4]], position, label, inkDraw.lineStyle.setSimpleBlack(0.9))
@@ -316,7 +324,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         h = self.totalHeight / 2.0  # half height
         x = h + 5  # x distance of the tip to the center
         R = math.sqrt(((x * x - h * h) / (2 * h)) ** 2 + x * x)
-        widthBase = self.totalWidth - 2 * self.lengthTerm - 15  # length of the straight part of AND body
+        widthBase = self.totalWidth - 1.5 * self.lengthTerm - x  # length of the straight part of OR body
 
         group = self.createGroup(parent, label)
 
@@ -338,8 +346,8 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         h = self.totalHeight / 2.0  # half height
         x = h + 5  # x distance of the tip to the center
         R = math.sqrt(((x * x - h * h) / (2 * h)) ** 2 + x * x)
-        space = 4  # space between parallel arcs
-        widthBase = self.totalWidth - 2 * self.lengthTerm - 15 - space  # length of the straight part of AND body
+        space = 2.2*self.lineWidthBody  # space between parallel arcs
+        widthBase = self.totalWidth - 1.5 * self.lengthTerm - x - space  # length of the straight part of AND body
 
         group = self.createGroup(parent, label)
 
@@ -365,11 +373,12 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 
         group = self.createGroup(parent, label)
 
+        inputSpace = (2/3)*self.totalHeight
         N_input = len(vectorInput)
-        spaceBetweenInputs = 20.0 / (N_input - 1)
+        spaceBetweenInputs = inputSpace / (N_input - 1)
         r = self.totalHeight  # radius
         H = self.totalHeight / 2.0  # total height
-        h_max = 10  # maximum height of inputs
+        h_max = inputSpace/2  # maximum height of inputs
 
         for i in range(0, N_input):
             h = -(h_max - i * spaceBetweenInputs)  # bottom to up because inkscape is upside down =(
@@ -394,9 +403,10 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 
         group = self.createGroup(parent, label)
 
+        inputSpace = (2/3)*self.totalHeight
         N_input = len(vectorInput)
-        spaceBetweenInputs = 20.0 / (N_input - 1)
-        h_max = 10  # maximum height of inputs
+        spaceBetweenInputs = inputSpace / (N_input - 1)
+        h_max = inputSpace/2  # maximum height of inputs
 
         for i in range(0, N_input):
             h = -(h_max - i * spaceBetweenInputs)
@@ -442,11 +452,16 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         label: label of the object (it can be repeated)
         """
 
+        h = self.totalHeight / 2.0  # half height
+        x = h + 5  # x distance of the tip to the center
+        R = math.sqrt(((x * x - h * h) / (2 * h)) ** 2 + x * x)
+        widthBase = self.totalWidth - 1.5 * self.lengthTerm - x  # length of the straight part of OR body
+
         group = self.createGroup(parent, label)
         x_output = self.totalHeight / 2.0 + 5  # x coordinate of the output
 
         self.drawORBody(group, position)
-        self.drawInputOR(group, vectorInput, [position[0] - 15, position[1]])
+        self.drawInputOR(group, vectorInput, [position[0] - widthBase, position[1]])
         self.createOutput(output, group, [x_output + position[0], position[1]], -2.5)  # 2.5 for reducing a little the lengh so that AND and
 
     # ---------------------------------------------
@@ -464,16 +479,22 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         label: label of the object (it can be repeated)
         """
 
+        h = self.totalHeight / 2.0  # half height
+        x = h + 5  # x distance of the tip to the center
+        R = math.sqrt(((x * x - h * h) / (2 * h)) ** 2 + x * x)
+        space = 2.2*self.lineWidthBody  # space between parallel arcs
+        widthBase = self.totalWidth - 1.5 * self.lengthTerm - x  # length of the straight part of AND body
+
         group = self.createGroup(parent, label)
         x_output = self.totalHeight / 2.0 + 5  # x coordinate of the output
 
         self.drawXORBody(group, position)
-        self.drawInputOR(group, vectorInput, [position[0] - 15, position[1]])
+        self.drawInputOR(group, vectorInput, [position[0] - widthBase, position[1]])
         self.createOutput(output, group, [x_output + position[0], position[1]], -2.5)  # 2.5 for reducing a little the lengh so that AND and
 
         # ---------------------------------------------
 
-    def createNOT(self, parent, position=[0, 0], label='NOTGate',isBuffer=False):
+    def createNOT(self, parent, position=[0, 0], label='NOTGate', isBuffer=False):
         """ Creates NOT logic Gate
 
         parent: parent object
@@ -485,7 +506,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
         isBuffer: if False, create a NOT gate, if True, create a buffer gate
         """
 
-        triangleSide = 20
+        triangleSide = 2/3*self.totalHeight
         triangle_height = triangleSide * math.sqrt(3) / 2
 
         group = self.createGroup(parent, label)
@@ -493,8 +514,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
                                self.lineStyleBody, True)
 
         self.createInput([True], group, position)
-        self.createOutput(isBuffer, group, [triangle_height + 0.5 + position[0], 0 + position[1]], 30 - triangle_height - 10 - 0.5)
-
+        self.createOutput(isBuffer, group, [triangle_height + 0.5 + position[0], 0 + position[1]], (self.totalWidth - 2*self.lengthTerm) - triangle_height - self.lengthTerm - 0.5)
 
         # ---------------------------------------------
 
@@ -592,7 +612,6 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 
         return group;
 
-
     def drawCommon(self, parent, position=[0, 0], label='Common', angleDeg=0):
         """ draws a GND
 
@@ -676,7 +695,7 @@ class LogicGates(inkBase.inkscapeMadeEasy):
             fontSizeFactorG = 1.0
             fontSizeFactorS = 0.6
         if size == 'small':
-            fontSizeFactorG = 1.0
+            fontSizeFactorG = 0.7
             fontSizeFactorS = 0.5
 
         x_min = position[0] - w / 2.0
@@ -755,7 +774,7 @@ if __name__ == '__main__':
     debugMode = False
 
     if debugMode:
-        tempFile='/home/fernando/lixo_defs.svg'
+        tempFile = '/home/fernando/lixo_defs.svg'
 
         logic.run([r'--ANDgate=True', tempFile], output=os.devnull)
         logic.document.write('/home/fernando/temp_debug_out.svg')
