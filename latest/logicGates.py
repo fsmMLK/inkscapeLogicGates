@@ -151,8 +151,8 @@ class LogicGates(inkBase.inkscapeMadeEasy):
 
             if so.subTab_sigExp == 'expressions':
                 if not inkDraw.useLatex:
-                    value = so.boolExpression.replace(' ', '').replace(r'\AND', '.').replace(r'\OR', '+').replace('\XOR', u'\u2295')
-                    value = value.replace('\XNOR', u'\u2299').replace(r'\NOT', u'\u00AC').replace('{', '(').replace('}', ')')  # removes LaTeX stuff
+                    value = so.boolExpression.replace(' ', '').replace(r'\AND', '.').replace(r'\OR', '+').replace(r'\XOR', u'\u2295')
+                    value = value.replace(r'\XNOR', u'\u2299').replace(r'\NOT', u'\u00AC').replace('{', '(').replace('}', ')')  # removes LaTeX stuff
                 else:
                     value = '$' + so.boolExpression + '$'
 
